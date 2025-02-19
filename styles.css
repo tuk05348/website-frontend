@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#visitor-counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+
+.page {
+    width: 960px;
+}
+
+#header {
+    display: flex;
+    width: 960px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px 0px;
+}
+
+.course {
+    flex: 1 0 50%;
+}
+
+.skill {
+    flex: 1 0 20%;
+}
+
+.spacer {
+    flex: 1 0 20%;
+    visibility: hidden;
+}
