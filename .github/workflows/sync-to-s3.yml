@@ -2,6 +2,10 @@
   push:
     branches:
       - master
+env:
+  BUCKET_NAME: niazbaharudeen.com
+  AWS_REGION: us-east-1
+  DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 jobs:
   sync-s3:
     permissions:
@@ -15,10 +19,9 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::205930627269:role/S3-Sync-Github-Actions-Role
           role-session-name: s3-role-session
-          aws-region: us-east-1
+          aws-region: ${{ env.AWS_REGION }}
       - name: sync s3
-        run: aws s3 sync . s3://niazbaharudeen.com \ --delete
+        run: aws s3 sync . s3://${{ env.BUCKET_NAME }}/ --delete
       - name: invalidate caches
-        env:
-          DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-        run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+          
+        run: aws cloudfront create-invalidation --distribution-id ${{ env.DISTRIBUTION_ID }} --paths "/*"
