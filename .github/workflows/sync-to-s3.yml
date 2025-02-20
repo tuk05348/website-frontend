@@ -2,10 +2,11 @@
   push:
     branches:
       - master
+
 env:
   BUCKET_NAME: niazbaharudeen.com
   AWS_REGION: us-east-1
-  DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+
 jobs:
   sync-s3:
     permissions:
@@ -23,5 +24,7 @@ jobs:
       - name: sync s3
         run: aws s3 sync . s3://${{ env.BUCKET_NAME }}/ --delete
       - name: invalidate caches
-          
-        run: aws cloudfront create-invalidation --distribution-id ${{ env.DISTRIBUTION_ID }} --paths "/*"
+        env: 
+          DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
