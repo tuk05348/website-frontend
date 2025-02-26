@@ -1,5 +1,7 @@
+//url to the backend visitor count API, would prefer not to hard code it
 const apiURL = "https://l1m3x0q9m3.execute-api.us-east-1.amazonaws.com/prod/visitorcount/"
 
+//simple function to make GET request to API and also do error handling
 async function fetchData() {
     const request = new Request(apiURL)
     try {
@@ -14,6 +16,7 @@ async function fetchData() {
     }
 }
 
+//simple function to update visitor count HTML element with the visitor count fetched from the API
 async function updateCount(){
     let res = await fetchData()
     let count = res["visitor-count"]
