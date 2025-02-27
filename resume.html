@@ -1,153 +1,63 @@
 <html>
     <head>
-        <title>Baharudeen Niaz Resume</title>
+        <title>Niaz Baharudeen</title>
         <link rel="stylesheet" href="styles.css">
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="visitor_count.js"></script>
     </head>
 
     <body>
-        <div id="header-container">
-            <div id="header">
-                <div>
-                    <h1><b>Niaz Baharudeen</b></h1>
-                </div>
-                <div>
-                    <a href="mailto:niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a>
-                </div>
-            </div>
-            <div id="visitor-counter">
-                <p><b>Visitor Count All-Time: </b></p>
-                <script>
-                    window.addEventListener("DOMContentLoaded", function(){updateCount();})
-                </script>
-            </div>
-        </div>
-        <div class="page">
-            <hr>
-            <div class="row">
-                <p>267-577-0955</p>
-                <p><a href="https://www.linkedin.com/in/niaz-baharudeen/" target="_blank">LinkedIn</a></p>
-                <p><a href="https://github.com/tuk05348" target="_blank">GitHub</a></p>
-            </div>
-            <p>
-                <h2><b><u>Education</u></b></h2>
-            </p>
-            <p>Temple University, College of Science & Technology, Philadelphia, PA</p>
-            <p>Bachelor of Science in Computer Science: August 2019 – May 2024</p>
-            <p><h2><b><u>Related Coursework</u></b></h2></p>
-            <div class="container" id="course-container">
-                <div class="course">Introduction to Mobile Application Development</div>
-                <div class="course">Principles of Data Science</div>
-                <div class="course">Wireless Networks and Security</div>
-                <div class="course">Securing the Internet of Things</div>
-                <div class="course">Data Structures and Algorithms</div>                
-                <div class="course">Software Design</div>
-            </div>
-            <p><h2><b><u>Technical Skills</u></b></h2></p>
-            <div class="container" id="skill-container">
-                <div class="skill">C</div>
-                <div class="skill">Java</div>
-                <div class="skill">Python</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React.js</div>
-                <div class="skill">Kotlin/Android</div>
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">Git</div>
-                <div class="skill">Linux</div>
-                <div class="skill">Jupyter NoteBooks</div>
-                <div class="skill">Pandas/NumPy</div>
-                <div class="skill">PyTorch</div>
-                <div class="skill">SQL</div>
-            </div>
-            <script type="text/javascript">
-                const skills = document.getElementById("skill-container")
-                while(skills.childElementCount%5 != 0){
-                    var spacer = document.createElement('div')
-                    spacer.classList.add('spacer')
-                    skills.appendChild(spacer)
-                }
+        <p>Niaz Baharudeen</p>
+        <div>
+            <p><b>Visitor Count: </b></p>
+            <script>
+                //window.addEventListener("DOMContentLoaded", function(){updateCount();})
             </script>
-            <p><h2><b><u>Certificates</u></b></h2></p>
-            <div class="row">
-                <p>Google Cybersecurity Professional Certificate</p>
-                <p>In Progress</p>
-            </div>
-            <div class="row">
-                <p>Google IT Support Professional Certificate</p>
-                <p>In Progress</p>
-            </div>
-            <p><h2><b><u>Technical Projects</u></b></h2></p>
-            <div class="row">
-                <p><b>BlastPad</b></p>
-                <p>April 2024</p>
-            </div>
-            <ul>
-                <li>Coordinated to build a handheld console using a Raspberry Pi, React, Python, Flask, and the Blockly framework with the purpose of teaching children programming concepts with block-based coding</li>
-                <li>Developed the GUI to display the Home page showing liked games, a Community Hub showing featured games, a Classroom showing games made by fellow students, and a Settings page to configure the device </li>
-            </ul>
-            <div class="row">
-                <p><b>Superbrowser</b></p>
-                <p>April 2024</p>
-            </div>
-            <ul>
-                <li>Built a web browser mobile application in Kotlin that supports navigation between tabs with swiping and displays a clickable list of tabs in landscape mode</li>
-                <li>Allowed sharing of the current webpage to other applications such as Messages and Email </li>
-                <li>Implemented bookmarks for webpages that are saved and persist after application closure and restart </li>
-            </ul>
-            <div class="row">
-                <p><b>Phishing Email Detection</b></p>
-                <p>April 2024</p>
-            </div>
-            <ul>
-                <li>Created an application in Python that detects phishing emails with a machine learning model that analyzes URLs</li>
-                <li>Discovered the optimal model by comparing multiple techniques such as Logistic Regression, KNN, and SVM</li>
-            </ul>
-            <div class="row">
-                <p><b>Orthography Overlord</b></p>
-                <p>December 2023</p>
-            </div>
-            <ul>
-                <li>Collaborated to create a desktop game using Electron and the Merriam-Webster API to teach children spelling</li>
-                <li>Devised an algorithm to determine the difficulty of a word to calculate the user’s score after playing a word set </li>
-            </ul>
-            <div class="row">
-                <p><b>Interactive Shell</b></p>
-                <p>April 2023</p>
-            </div>
-            <ul>
-                <li>Constructed a shell in C that can execute programs and run them in the background using fork() and exec()</li>
-                <li>Customized path resolution by using environment variables to manually find executable programs</li>
-                <li>Implemented redirection and piping so programs can send data between each other</li>
-            </ul>
-            <p><h2><b><u>Work Experience</u></b></h2></p>
-            <p><b>Temple University</b> – Philadelphia PA</p>
-            <div class="row">
-                <p>Research Assistant</p>
-                <p>March 2024 – May 2024</p>
-            </div>
-            <ul>
-                <li>Annotated thousands of scientific flow charts and diagrams using Label Studio with true and false statements to train a machine learning model to generate its own and annotate original research conducted at the university</li>
-            </ul>
-            <p><b>Temple University</b> – Philadelphia PA</p>
-            <div class="row">
-                <p>Teaching Assistant, Mathematical Concepts in Computing II</p>
-                <p>September 2023 – May 2024</p>
-            </div>
-            <ul>
-                <li>Held recitation for 25+ students to go over prior material, such as proofs and linear algebra, and administer quizzes</li>
-                <li>Offered constructive, individually tailored feedback on student submissions to further facilitate learning</li>
-            </ul>
-            <p><h2><b><u>Affiliations</u></b></h2></p>
-            <div class="row">
-                <p>Member, TUDev</p>
-                <p>February 2023 – May 2024</p>
-            </div>
-            <div class="row">
-                <p>Member, Association for Computing Machinery</p>
-                <p>January 2023 – May 2024</p>
-            </div>
         </div>
+        <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
+        <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
+        <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
+        
+        <p>Education</p>
+        <hr>
+        <p>Temple University</p>
+        <p>Philadelphia, PA</p>
+        <p>Bachelor of Science in Computer Science</p>
+        <p>May 2024</p>
+
+        <p>Experience</p>
+        <hr>
+        <p>Undergraduate Research Assistant</p>
+        <p>March 2024 -- May 2024</p>
+        <p>Annotated thousands of scientific flow charts and diagrams using Label Studio with true and false statements to train a machine learning model to generate its own and annotate original research conducted at the university</p>
+        <p>Teaching Assistant</p>
+        <p>Held recitation for 25+ students to go over prior material, such as linear algebra, and administer quizzes</p>
+        <p>Offered constructive, individually tailored feedback on student submissions to further facilitate learning</p>
+        
+        <p>Certificates</p>
+        <hr>
+        <p>Google Cybersecurity Professional Certificate</p>
+        <p>December 2024</p>
+
+        <p>Projects</p>
+        <hr>
+
+        <p>Cloud Resume Challenge</p>
+
+        <p>BlastPad</p>
+
+        <p>Superbrowser</p>
+
+        <p>Phishing Email Detection</p>
+
+        <p>Orthography Overlord</p>
+
+        <p>Technical Skills</p>
+        <hr>
+        <p>Languages:</p>
+        <p>Frameworks:</p>
+        <p>Developer Tools:</p>
+        <p>Libraries:</p>
     </body>
 </html>
