@@ -29,3 +29,12 @@ body {
     flex-flow: row wrap;
     gap: 0.5rem;
 }
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 70rem;
+}
