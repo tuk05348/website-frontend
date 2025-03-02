@@ -9,6 +9,18 @@
 
     <body>
         <div class="page">
+            <div class="sidebar">
+                <div class="sidenav">
+                    <p>Resume</p>
+                    <li>
+                        <ul><a href="#Education">Education</a></ul>
+                        <ul><a href="#Experience">Experience</a></ul>
+                        <ul><a href="#Certificates">Certificates</a></ul>
+                        <ul><a href="#Projects">Projects</a></ul>
+                        <ul><a href="#Technical-Skills">Technical Skills</a></ul>
+                    </li>
+                </div>
+            </div>
             <div class="content">
                 <div class="header">
                     <div><p><h1>Niaz Baharudeen</h1></p></div>
@@ -19,13 +31,14 @@
                         </script>
                     </div>
                 </div>
+
                 <div class="date-location-container">
                     <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
                     <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
                     <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
                 </div>
-        
-                <p><h2>Education</h2></p>
+
+                <div id="Education"><p><h2>Education</h2></p></div>
                 <hr>
                 <div class="date-location-container">
                     <div><p><h3>Temple University</h3></p></div>
@@ -35,8 +48,8 @@
                     <p><i>Bachelor of Science in Computer Science</i></p>
                     <p><i>May 2024</i></p>
                 </div>
-        
-                <p><h2>Experience</h2></p>
+
+                <div id="Experience"><p><h2>Experience</h2></p></div>
                 <hr>
                 <div class="date-location-container">
                     <div><p><h3>Undergraduate Research Assistant</h3></p></div>
@@ -53,15 +66,15 @@
                     <li>Held recitation for 25+ students to go over prior material, such as linear algebra, and administer quizzes</li>
                     <li>Offered constructive, individually tailored feedback on student submissions to further facilitate learning</li>
                 </ul>
-        
-                <p><h2>Certificates</h2></p>
+
+                <div id="Certificates"><p><h2>Certificates</h2></p></div>
                 <hr>
                 <div class="date-location-container">
                     <div><p><h3>Google Cybersecurity Professional Certificate</h3></p></div>
                     <p>December 2024</p>
                 </div>
-        
-                <p><h2>Projects</h2></p>
+
+                <div id="Projects"><p><h2>Projects</h2></p></div>
                 <hr>
                 <div class="date-location-container">
                     <div class="project-container">
@@ -75,7 +88,7 @@
                     <li>Utilized AWS SAM to create a Lambda function to update the visitor count, a DynamoDB table to store said count, and a REST API to deliver the count to the front-end</li>
                     <li>Implemented a GitHub Actions workflow to automatically run tests and deploy the AWS SAM infrastructure</li>
                 </ul>
-        
+
                 <div class="date-location-container">
                     <div class="project-container">
                         <div><p><h3>BlastPad</h3></p></div>
@@ -89,7 +102,7 @@
                     <li>Built the device using a Raspberry Pi and created the drag and drop code blocks using the Blockly framework</li>
                     <li>Utilized GitHub Actions to automatically run tests and build the OS with necessary software preloaded</li>
                 </ul>
-        
+
                 <div class="date-location-container">
                     <div class="project-container">
                         <div><p><h3>Superbrowser</h3></p></div>
@@ -102,7 +115,7 @@
                     <li>Allowed sharing of the current webpage to other applications such as Messages and Email by using Intents</li>
                     <li>Implemented bookmarks for webpages that are saved and persist after application closure and restart</li>
                 </ul>
-        
+
                 <div class="date-location-container">
                     <div class="project-container">
                         <div><p><h3>Phishing Email Detection</h3></p></div>
@@ -114,7 +127,7 @@
                     <li>Created an application in Python that detects phishing emails with a machine learning model that analyzes URLs</li>
                     <li>Discovered the optimal model by comparing multiple techniques such as Logistic Regression, KNN, and SVM</li>
                 </ul>
-        
+
                 <div class="date-location-container">
                     <div class="project-container">
                         <div><p><h3>Orthography Overlord</h3></p></div>
@@ -126,8 +139,8 @@
                     <li>Collaborated using Agile methodologies to create a desktop game using Electron and the Merriam-Webster API to teach users spelling by playing the audio of a word and challenging the user to spell it</li>
                     <li>Devised an algorithm to determine the difficulty of a word to calculate the user's score after playing a word set</li>
                 </ul>
-        
-                <p><h2>Technical Skills</h2></p>
+
+                <div id="Technical-Skills"><p><h2>Technical Skills</h2></p></div>
                 <hr>
                 <p>Languages: C, Java, Python, Kotlin, JavaScript, HTML/CSS, SQL</p>
                 <p>Frameworks: React, Node.js, Electron, Flask, JUnit</p>
