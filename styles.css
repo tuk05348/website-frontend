@@ -14,13 +14,19 @@ body {
 .page {
     display: flex;
     justify-content: flex-start;
-    background-color: #394EFF;
+    background-color: #ECFEE8;
     gap: 20px;
 }
 
 .sidebar {
     background-color: #394EFF;
-    max-width: 25rem;
+    max-width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 .sidenav {
@@ -31,6 +37,7 @@ body {
     list-style-type: none;
     width: 100%;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active{
@@ -42,6 +49,7 @@ body {
     max-width: 70rem;
     background-color: #ECFEE8;
     border: 5px solid #ECFEE8;
+    padding-bottom: 12%;
 }
 
 .header {
