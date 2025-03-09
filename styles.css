@@ -12,8 +12,9 @@ body {
 }
 
 .page-container {
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto;
     background-color: #ECFEE8;
 }
 
@@ -21,7 +22,6 @@ body {
     display: flex;
     justify-content: flex-start;
     background-color: #ECFEE8;
-    gap: 20px;
 }
 
 .banner {
