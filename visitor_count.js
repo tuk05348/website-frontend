@@ -22,3 +22,5 @@ async function updateCount(){
     let count = res["visitor-count"]
     document.getElementById("visitor-counter").innerHTML += "<p><b>" + count + "</b></p>"
 }
+
+window.addEventListener("DOMContentLoaded", function(){updateCount();})
