@@ -79,10 +79,11 @@ body {
     align-items: center;
 }
 
-#visitor-counter {
+.counter-container {
     display: flex;
     justify-content: flex-start;
     flex-flow: row nowrap;
+    font-weight: bold;
 }
 
 .date-location-container {
