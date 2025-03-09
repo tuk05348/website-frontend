@@ -14,7 +14,7 @@ body {
 .page-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     background-color: #ECFEE8;
 }
 
@@ -37,7 +37,7 @@ body {
     padding-right: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .sidebar {
         display: none;
     }
