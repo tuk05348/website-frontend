@@ -11,10 +11,11 @@ body {
     padding: 0;
 }
 
-.page-container {
+.page {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto 1fr;
+    column-gap: 20px;
     background-color: #ECFEE8;
 }
 
@@ -23,12 +24,7 @@ body {
     flex: 1;
     flex-flow: column nowrap;
     max-width: 70rem;
-}
-
-.banner-container {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 20px;
+    border: 5px solid #ECFEE8;
 }
 
 .sidebar {
@@ -44,7 +40,7 @@ body {
     .spacer {
         display: none;
     }
-    .page-container {
+    .page {
         display: flex;
         flex-flow: column nowrap;
     }
