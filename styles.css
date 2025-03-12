@@ -44,6 +44,12 @@ body {
         display: flex;
         flex-flow: column nowrap;
     }
+    .waves {
+        display: none;
+    }
+    img.resize {
+        display: none;
+    }
 }
 
 .sidenav {
@@ -100,16 +106,28 @@ body {
 .spacer {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    line-height: 0;
+    margin-bottom: 0;
+}
+
+img.resize {
+    position: relative;
+    width: 60%;
+    z-index: 0;
+    top: 45px;
 }
 
 .waves {
     position: relative;
     width: 100%;
     height: 40px;
+    z-index: 1;
+    bottom: 0;
   }
 
   .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    animation: move-forever 25s cubic-bezier(.55,.5,.5,.45)     infinite;
   }
   .parallax > use:nth-child(1) {
     animation-delay: -2s;
