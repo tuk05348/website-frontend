@@ -23,4 +23,4 @@ async function updateCount(){
     document.getElementById("visitor-counter").innerHTML = count
 }
 
-window.addEventListener("DOMContentLoaded", function(){updateCount();})
+//window.addEventListener("DOMContentLoaded", function(){updateCount();})

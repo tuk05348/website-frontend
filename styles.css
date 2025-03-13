@@ -28,7 +28,7 @@ body {
 }
 
 .sidebar {
-    background-color: #394EFF;
+    background: linear-gradient(#82FFF3, #394EFF 10%);
     max-width: 20rem;
     padding-right: 1rem;
 }
