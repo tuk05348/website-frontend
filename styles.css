@@ -108,6 +108,7 @@ body {
     justify-items: center;
     align-items: end;
     padding-top: 20px;
+    background-color: #A0D9EF;
 }
 
 .spacer > * {
