@@ -20,5 +20,7 @@ async function fetchData() {
 async function updateCount(){
     let res = await fetchData()
     let count = res["visitor-count"]
-    document.getElementById("visitor-counter").innerHTML += "<p><b>" + count + "</b></p>"
+    document.getElementById("visitor-counter").innerHTML = count
 }
+
+window.addEventListener("DOMContentLoaded", function(){updateCount();})

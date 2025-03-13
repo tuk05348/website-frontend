@@ -9,7 +9,33 @@
 
     <body>
         <div class="page">
-            <div class="sidebar">
+            <div class="spacer">
+                <img class="resize" src="island.png" alt="island">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 25 150 60" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill=#394EFF />
+                </g>
+                </svg>
+            </div>
+            <div class="banner">
+                <div class="header">
+                    <div id="Top"><p><h1>Niaz Baharudeen</h1></p></div>
+                    <div class="counter-container">
+                        <p>Visitor Count: </p>
+                        <p id="visitor-counter"></p>
+                    </div>
+                </div>
+                <div class="date-location-container">
+                    <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
+                    <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
+                    <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
+                </div>
+            </div>       
+            <div id="sidebar" class="sidebar">
                 <div class="sidenav">
                     <p><a href="#Top">Resume</a></p>
                     <li>
@@ -22,22 +48,6 @@
                 </div>
             </div>
             <div class="content">
-                <div class="header">
-                    <div id="Top"><p><h1>Niaz Baharudeen</h1></p></div>
-                    <div id="visitor-counter">
-                        <p><b>Visitor Count: </b></p>
-                        <script>
-                            window.addEventListener("DOMContentLoaded", function(){updateCount();})
-                        </script>
-                    </div>
-                </div>
-
-                <div class="date-location-container">
-                    <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
-                    <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
-                    <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
-                </div>
-
                 <div id="Education"><p><h2>Education</h2></p></div>
                 <hr>
                 <div class="date-location-container">
