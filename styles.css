@@ -12,10 +12,8 @@ body {
 }
 
 .page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr;
-    column-gap: 20px;
+    display: flex;
+    flex-flow: column nowrap;
     background-color: #ECFEE8;
 }
 
@@ -27,7 +25,22 @@ body {
     border: 5px solid #ECFEE8;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    font-weight: bold;
+}
+
 .sidebar {
+    display: none;
     background: linear-gradient(#82FFF3, #394EFF 10%);
     max-width: 20rem;
     padding-right: 1rem;
@@ -55,20 +68,6 @@ body {
     padding-bottom: 30%;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.counter-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row nowrap;
-    font-weight: bold;
-}
-
 .date-location-container {
     display: flex;
     justify-content: space-between;
@@ -85,7 +84,7 @@ body {
 }
 
 .spacer {
-    display: grid;
+    display: none;
     justify-items: center;
     align-items: end;
     padding-top: 20px;
@@ -106,51 +105,49 @@ img.resize {
     width: 100%;
     height: 45px;
     z-index: 1;
-  }
+}
 
-  .parallax > use {
+.parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.5,.45) infinite;
-  }
-  .parallax > use:nth-child(1) {
+}
+.parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
+}
+.parallax > use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
+}
+.parallax > use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
+}
+.parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
-  }
-  @keyframes move-forever {
+}
+@keyframes move-forever {
     0% {
-     transform: translate3d(-90px,0,0);
+        transform: translate3d(-90px,0,0);
     }
     100% { 
-      transform: translate3d(85px,0,0);
+        transform: translate3d(85px,0,0);
     }
-  }
+}
 
-  @media screen and (max-width: 992px) {
-    .sidebar {
-        display: none;
-    }
-    .spacer {
-        display: none;
-    }
+@media screen and (min-width: 992px) {
     .page {
-        display: flex;
-        flex-flow: column nowrap;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
     }
-    .waves {
-        display: none;
+
+    .sidebar {
+        display: block;
     }
-    img.resize {
-        display: none;
+
+    .spacer {
+        display: grid;
     }
 }
