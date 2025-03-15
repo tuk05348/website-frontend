@@ -41,13 +41,13 @@ body {
 
 .sidebar {
     display: none;
-    background: linear-gradient(#82FFF3, #394EFF 10%);
+    background-image: linear-gradient(to bottom, #82fff3, #00e0ff, #00bbff, #008fff, #394eff, #1d3dc7, #062c91, #001b5d, #04052e);
     max-width: 20rem;
     padding-right: 1rem;
 }
 
 .sidenav {
-    color: linear-gradient(#ECFEE8, #04052E);
+    color:#ECFEE8;
     font-size: 1.5rem;
     position: sticky;
     top: 30px;
@@ -56,9 +56,13 @@ body {
     padding-left: 1rem;
 }
 
-.sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active{
+.sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active {
     color: #ECFEE8;
     text-decoration: none;
+}
+
+.sidenav ul:hover {
+    background-color: #04052E;
 }
 
 .content {
