@@ -56,6 +56,10 @@ body {
     padding-left: 1rem;
 }
 
+.tab {
+    background-color: #04052E;
+}
+
 .sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active {
     color: #ECFEE8;
     text-decoration: none;

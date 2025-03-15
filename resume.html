@@ -38,14 +38,15 @@
             <div id="sidebar" class="sidebar">
                 <div class="sidenav">
                     <p><a href="#Top">Resume</a></p>
-                    <li>
-                        <ul><a href="#Education">Education</a></ul>
-                        <ul><a href="#Experience">Experience</a></ul>
-                        <ul><a href="#Certificates">Certificates</a></ul>
-                        <ul><a href="#Projects">Projects</a></ul>
-                        <ul><a href="#Technical-Skills">Technical Skills</a></ul>
+                    <li id="List">
+                        <ul id="Edu" onclick=highlight(id)><a href="#Education">Education</a></ul>
+                        <ul id="Exp" onclick=highlight(id)><a href="#Experience">Experience</a></ul>
+                        <ul id="Cert" onclick=highlight(id)><a href="#Certificates">Certificates</a></ul>
+                        <ul id="Proj" onclick=highlight(id)><a href="#Projects">Projects</a></ul>
+                        <ul id="Skill" onclick=highlight(id)><a href="#Technical-Skills">Technical Skills</a></ul>
                     </li>
                 </div>
+                <script type="text/javascript" src="highlight.js"></script>
             </div>
             <div class="content">
                 <div id="Education"><p><h2>Education</h2></p></div>
