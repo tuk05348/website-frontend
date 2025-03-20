@@ -1,9 +1,11 @@
 function highlight(id) {
-    var tab = document.getElementById(id)
-    var list = document.getElementById("List")
-    var prev = list.querySelector(".tab")
+    let tab = document.getElementById(id)
+    let list = document.getElementById("List")
+    let prev = list.querySelector(".tab")
     if(prev !== null){
         prev.classList.remove("tab")
     }
-    tab.classList.add("tab")
+    if(tab.id !== "Top_Anchor"){
+        tab.classList.add("tab")
+    }
 }
