@@ -1,25 +1,27 @@
 let sidenav = document.getElementById('sidenav');
-let nav_list = document.querySelectorAll('.sidenav > p, .sidenav > ul > li');
+let nav_list = document.querySelectorAll('.sidenav > ul > li');
 console.log(nav_list);
 let nav_array = [...nav_list];
 
 sidenav.addEventListener('click', (e) => {
-    let tab = e.target.closest('li');
-    tab.classList.add('tab');
-    let exclude = nav_array.filter(element => element != tab);
+    let highlight = e.target.closest('li');
+    if(highlight){
+        highlight.classList.add('highlight');
+    }
+    let exclude = nav_array.filter(element => element != highlight);
     exclude.forEach(element => {
-        element.classList.remove('tab')
+        element.classList.remove('highlight')
     });
 });
 
 /*function highlight(id) {
-    let tab = document.getElementById(id)
+    let highlight = document.getElementById(id)
     let list = document.getElementById("List")
-    let prev = list.querySelector(".tab")
+    let prev = list.querySelector(".highlight")
     if(prev !== null){
-        prev.classList.remove("tab")
+        prev.classList.remove("highlight")
     }
-    if(tab.id !== "Top-Anchor"){
-        tab.classList.add("tab")
+    if(highlight.id !== "Top-Anchor"){
+        highlight.classList.add("highlight")
     }
 }*/
