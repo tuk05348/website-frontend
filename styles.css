@@ -22,7 +22,8 @@ body {
     flex: 1;
     flex-flow: column nowrap;
     max-width: 70rem;
-    border: 5px solid #ECFEE8;
+    background-image: linear-gradient(to bottom, #62C1E5 40%, #82FFF3);
+    padding: 5px;
 }
 
 .header {
@@ -85,9 +86,8 @@ body {
 
 .content {
     max-width: 70rem;
-    background-color: #ECFEE8;
-    border: 5px solid #ECFEE8;
-    padding-bottom: 30%;
+    background-color: #C5FFC9;
+    padding: 5px 5px 30%;
 }
 
 .date-location-container {
@@ -162,7 +162,6 @@ img.resize {
         display: grid;
         grid-template-rows: auto 1fr auto;
         grid-template-columns: auto 1fr;
-        column-gap: 20px;
     }
 
     .sidebar {
@@ -171,5 +170,13 @@ img.resize {
 
     .spacer {
         display: grid;
+    }
+
+    .banner {
+        padding-left: 25px;
+    }
+
+    .content {
+        padding-left: 25px;
     }
 }

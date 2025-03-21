@@ -13,15 +13,3 @@ sidenav.addEventListener('click', (e) => {
         element.classList.remove('highlight')
     });
 });
-
-/*function highlight(id) {
-    let highlight = document.getElementById(id)
-    let list = document.getElementById("List")
-    let prev = list.querySelector(".highlight")
-    if(prev !== null){
-        prev.classList.remove("highlight")
-    }
-    if(highlight.id !== "Top-Anchor"){
-        highlight.classList.add("highlight")
-    }
-}*/
