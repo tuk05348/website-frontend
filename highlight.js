@@ -1,11 +1,12 @@
-let sidenav = document.getElementById("sidenav");
-let nav_list = document.querySelectorAll(".sidenav > p, .sidenav > ul > li");
+let sidenav = document.getElementById('sidenav');
+let nav_list = document.querySelectorAll('.sidenav > p, .sidenav > ul > li');
 console.log(nav_list);
 let nav_array = [...nav_list];
 
 sidenav.addEventListener('click', (e) => {
-    e.target.classList.add('tab');
-    let exclude = nav_array.filter(element => element != e.target);
+    let tab = e.target.closest('li');
+    tab.classList.add('tab');
+    let exclude = nav_array.filter(element => element != tab);
     exclude.forEach(element => {
         element.classList.remove('tab')
     });
