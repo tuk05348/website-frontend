@@ -31,7 +31,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     align-items: center;
 }
@@ -165,6 +165,12 @@ img.resize {
     }
     100% { 
         transform: translate3d(85px,0,0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-between;
     }
 }
 
