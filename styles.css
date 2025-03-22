@@ -18,7 +18,7 @@ body {
 }
 
 .banner-container {
-    background-image: linear-gradient(to bottom, #62C1E5 72%, #82FFF3 80%);
+    background-image: none;
 }
 
 .banner {
@@ -172,6 +172,10 @@ img.resize {
 
     .spacer {
         display: grid;
+    }
+
+    .banner-container {
+        background-image: linear-gradient(to bottom, #62C1E5 72%, #82FFF3 80%);
     }
 
     .banner {
