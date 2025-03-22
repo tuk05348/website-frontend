@@ -17,10 +17,14 @@ async function fetchData() {
 }
 
 //simple function to update visitor count HTML element with the visitor count fetched from the API
+// local storage is used to save the previous count and ensure a smooth transition when new count is retrieved
 async function updateCount(){
-    let res = await fetchData()
-    let count = res["visitor-count"]
-    document.getElementById("visitor-counter").innerHTML = count
+    let stored_count = localStorage.getItem("stored_count"); //get stored count before new count is fetched
+    document.getElementById("visitor-counter").innerHTML = stored_count;
+    let res = await fetchData(); //fetch new count
+    let count = res["visitor-count"];
+    localStorage.setItem("stored_count", count); //set stored count to the new count
+    document.getElementById("visitor-counter").innerHTML = count; //display new count
 }
 
 window.addEventListener("DOMContentLoaded", function(){updateCount();})
