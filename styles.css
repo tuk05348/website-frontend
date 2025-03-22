@@ -41,6 +41,9 @@ body {
     justify-content: flex-start;
     flex-flow: row nowrap;
     font-weight: bold;
+    padding: 0px 1em;
+    border: 5px solid #394EFF;
+    border-radius: 2em;
 }
 
 .sidebar {
