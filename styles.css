@@ -12,11 +12,13 @@ body {
 }
 
 .page {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr;
-    column-gap: 20px;
-    background-color: #ECFEE8;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #C4FFC7;
+}
+
+.banner-container {
+    background-image: none;
 }
 
 .banner {
@@ -24,54 +26,7 @@ body {
     flex: 1;
     flex-flow: column nowrap;
     max-width: 70rem;
-    border: 5px solid #ECFEE8;
-}
-
-.sidebar {
-    background-color: #394EFF;
-    max-width: 20rem;
-    padding-right: 1rem;
-}
-
-@media screen and (max-width: 992px) {
-    .sidebar {
-        display: none;
-    }
-    .spacer {
-        display: none;
-    }
-    .page {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    .waves {
-        display: none;
-    }
-    img.resize {
-        display: none;
-    }
-}
-
-.sidenav {
-    color: #ECFEE8;
-    font-size: 1.5rem;
-    position: sticky;
-    top: 30px;
-    list-style-type: none;
-    width: 100%;
-    padding-left: 1rem;
-}
-
-.sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active{
-    color: #ECFEE8;
-    text-decoration: none;
-}
-
-.content {
-    max-width: 70rem;
-    background-color: #ECFEE8;
-    border: 5px solid #ECFEE8;
-    padding-bottom: 30%;
+    padding: 5px;
 }
 
 .header {
@@ -86,6 +41,55 @@ body {
     justify-content: flex-start;
     flex-flow: row nowrap;
     font-weight: bold;
+}
+
+.sidebar {
+    display: none;
+    background-image: linear-gradient(to bottom, #82fff3, #00e0ff, #00bbff, #008fff, #394eff);
+    max-width: 20rem;
+    padding-right: 1rem;
+}
+
+.sidenav {
+    font-size: 1.5rem;
+    position: sticky;
+    top: 30px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.sidenav li {
+    list-style-type: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.sidenav ul {
+    margin-block-start: 0.5em;
+}
+
+.sidenav p {
+    margin-block-end: 0.5em;
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.sidenav li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.sidenav a:link, .sidenav a:visited, .sidenav a:hover, .sidenav a:active {
+    color: #04052E;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 70rem;
+    padding: 5px 5px 30%;
 }
 
 .date-location-container {
@@ -104,10 +108,11 @@ body {
 }
 
 .spacer {
-    display: grid;
+    display: none;
     justify-items: center;
     align-items: end;
     padding-top: 20px;
+    background-color: #62C1E5;
 }
 
 .spacer > * {
@@ -124,32 +129,62 @@ img.resize {
     width: 100%;
     height: 45px;
     z-index: 1;
-  }
+}
 
-  .parallax > use {
+.parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.5,.45) infinite;
-  }
-  .parallax > use:nth-child(1) {
+}
+.parallax > use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
+}
+.parallax > use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
+}
+.parallax > use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
+}
+.parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
-  }
-  @keyframes move-forever {
+}
+@keyframes move-forever {
     0% {
-     transform: translate3d(-90px,0,0);
+        transform: translate3d(-90px,0,0);
     }
     100% { 
-      transform: translate3d(85px,0,0);
+        transform: translate3d(85px,0,0);
     }
-  }
+}
+
+@media screen and (min-width: 992px) {
+    .page {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .spacer {
+        display: grid;
+    }
+
+    .banner-container {
+        background-image: linear-gradient(to bottom, #62C1E5 72%, #82FFF3 80%);
+    }
+
+    .banner {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

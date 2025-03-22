@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Niaz Baharudeen</title>
         <link rel="stylesheet" href="styles.css">
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="visitor_count.js"></script>
     </head>
@@ -17,41 +18,44 @@
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill=#394EFF />
+                <use xlink:href="#gentle-wave" x="48" y="0" fill=#82FFF3 />
                 </g>
                 </svg>
             </div>
-            <div class="banner">
-                <div class="header">
-                    <div id="Top"><p><h1>Niaz Baharudeen</h1></p></div>
-                    <div class="counter-container">
-                        <p>Visitor Count: </p>
-                        <p id="visitor-counter"></p>
+            <div class="banner-container">
+                <div class="banner">
+                    <div class="header">
+                        <div id="Top"><h1>Niaz Baharudeen</h1></div>
+                        <div class="counter-container">
+                            <p>Visitor Count: </p>
+                            <p id="visitor-counter"></p>
+                        </div>
+                    </div>
+                    <div class="date-location-container">
+                        <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
+                        <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
+                        <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
                     </div>
                 </div>
-                <div class="date-location-container">
-                    <p><a href="niaz.al-rahm.baharudeen@temple.edu">niaz.al-rahm.baharudeen@temple.edu</a></p>
-                    <p><a href="https://linkedin.com/in/niaz-baharudeen">https://linkedin.com/in/niaz-baharudeen</a></p>
-                    <p><a href="https://github.com/tuk05348">https://github.com/tuk05348</a></p>
-                </div>
             </div>       
-            <div id="sidebar" class="sidebar">
-                <div class="sidenav">
-                    <p><a href="#Top">Resume</a></p>
-                    <li>
-                        <ul><a href="#Education">Education</a></ul>
-                        <ul><a href="#Experience">Experience</a></ul>
-                        <ul><a href="#Certificates">Certificates</a></ul>
-                        <ul><a href="#Projects">Projects</a></ul>
-                        <ul><a href="#Technical-Skills">Technical Skills</a></ul>
-                    </li>
+            <div class="sidebar">
+                <div id="sidenav" class="sidenav">
+                    <p id="Top-Anchor"><a href="#Top">Resume</a></p>
+                    <ul id="List">
+                        <li id="Edu"><a href="#Education">Education</a></li>
+                        <li id="Exp"><a href="#Experience">Experience</a></li>
+                        <li id="Cert"><a href="#Certificates">Certificates</a></li>
+                        <li id="Proj"><a href="#Projects">Projects</a></li>
+                        <li id="Skill"><a href="#Technical-Skills">Technical Skills</a></li>
+                    </ul>
                 </div>
+                <script type="text/javascript" src="highlight.js"></script>
             </div>
             <div class="content">
-                <div id="Education"><p><h2>Education</h2></p></div>
+                <div id="Education"><h2>Education</h2></div>
                 <hr>
                 <div class="date-location-container">
-                    <div><p><h3>Temple University</h3></p></div>
+                    <div><h3>Temple University</h3></div>
                     <p>Philadelphia, PA</p>
                 </div>
                 <div class="date-location-container">
@@ -59,17 +63,17 @@
                     <p><i>May 2024</i></p>
                 </div>
 
-                <div id="Experience"><p><h2>Experience</h2></p></div>
+                <div id="Experience"><h2>Experience</h2></div>
                 <hr>
                 <div class="date-location-container">
-                    <div><p><h3>Undergraduate Research Assistant</h3></p></div>
+                    <div><h3>Undergraduate Research Assistant</h3></div>
                     <p>March 2024 -- May 2024</p>
                 </div>
                 <ul>
                     <li>Annotated thousands of scientific flow charts and diagrams using Label Studio with true and false statements to train a machine learning model to generate its own and annotate original research conducted at the university</li>
                 </ul>
                 <div class="date-location-container">
-                    <div><p><h3>Teaching Assistant</h3></p></div>
+                    <div><h3>Teaching Assistant</h3></div>
                     <p>September 2023 -- May 2024</p>
                 </div>
                 <ul>
@@ -77,18 +81,18 @@
                     <li>Offered constructive, individually tailored feedback on student submissions to further facilitate learning</li>
                 </ul>
 
-                <div id="Certificates"><p><h2>Certificates</h2></p></div>
+                <div id="Certificates"><h2>Certificates</h2></div>
                 <hr>
                 <div class="date-location-container">
-                    <div><p><h3>Google Cybersecurity Professional Certificate</h3></p></div>
+                    <div><h3>Google Cybersecurity Professional Certificate</h3></div>
                     <p>December 2024</p>
                 </div>
 
-                <div id="Projects"><p><h2>Projects</h2></p></div>
+                <div id="Projects"><h2>Projects</h2></div>
                 <hr>
                 <div class="date-location-container">
                     <div class="project-container">
-                        <div><p><h3>Cloud Resume Challenge</h3></p></div>
+                        <div><h3>Cloud Resume Challenge</h3></div>
                         <p> | <i>AWS, Python, JavaScript, HTML, CSS, Github Actions</i></p>
                     </div>
                     <p>February 2025 -- Present</p>
@@ -101,7 +105,7 @@
 
                 <div class="date-location-container">
                     <div class="project-container">
-                        <div><p><h3>BlastPad</h3></p></div>
+                        <div><h3>BlastPad</h3></div>
                         <p> | <i>Raspberry Pi, React, Blockly, Flask, Github Actions</i></p>
                     </div>
                     <p>January 2024 -- May 2024</p>
@@ -115,7 +119,7 @@
 
                 <div class="date-location-container">
                     <div class="project-container">
-                        <div><p><h3>Superbrowser</h3></p></div>
+                        <div><h3>Superbrowser</h3></div>
                         <p> | <i>Android, Kotlin, Gradle, ViewPager2, Fragments</i></p>
                     </div>
                         <p>March 2024 -- May 2024</p>
@@ -128,7 +132,7 @@
 
                 <div class="date-location-container">
                     <div class="project-container">
-                        <div><p><h3>Phishing Email Detection</h3></p></div>
+                        <div><h3>Phishing Email Detection</h3></div>
                         <p> | <i>Python, Pandas, NumPy, Scikit-Learn, Kaggle</i></p>
                     </div>
                     <p>April 2024 -- May 2024</p>
@@ -140,7 +144,7 @@
 
                 <div class="date-location-container">
                     <div class="project-container">
-                        <div><p><h3>Orthography Overlord</h3></p></div>
+                        <div><h3>Orthography Overlord</h3></div>
                         <p> | <i>Electron, Merriam-Webster API</i></p>
                     </div>
                     <p>November 2023 -- December 2023</p>
@@ -150,7 +154,7 @@
                     <li>Devised an algorithm to determine the difficulty of a word to calculate the user's score after playing a word set</li>
                 </ul>
 
-                <div id="Technical-Skills"><p><h2>Technical Skills</h2></p></div>
+                <div id="Technical-Skills"><h2>Technical Skills</h2></div>
                 <hr>
                 <p>Languages: C, Java, Python, Kotlin, JavaScript, HTML/CSS, SQL</p>
                 <p>Frameworks: React, Node.js, Electron, Flask, JUnit</p>
