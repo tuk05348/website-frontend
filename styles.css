@@ -14,7 +14,11 @@ body {
 .page {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #ECFEE8;
+    background-color: #C4FFC7;
+}
+
+.banner-container {
+    background-image: linear-gradient(to bottom, #62C1E5 72%, #82FFF3 80%);
 }
 
 .banner {
@@ -22,7 +26,6 @@ body {
     flex: 1;
     flex-flow: column nowrap;
     max-width: 70rem;
-    background-image: linear-gradient(to bottom, #62C1E5 40%, #82FFF3);
     padding: 5px;
 }
 
@@ -86,7 +89,6 @@ body {
 
 .content {
     max-width: 70rem;
-    background-color: #C5FFC9;
     padding: 5px 5px 30%;
 }
 
@@ -174,9 +176,11 @@ img.resize {
 
     .banner {
         padding-left: 25px;
+        padding-right: 25px;
     }
 
     .content {
         padding-left: 25px;
+        padding-right: 25px;
     }
 }
