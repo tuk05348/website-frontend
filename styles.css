@@ -168,7 +168,7 @@ img.resize {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
     .header {
         justify-content: space-between;
     }
