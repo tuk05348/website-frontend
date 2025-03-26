@@ -36,6 +36,11 @@ body {
     align-items: center;
 }
 
+#Top {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
 .counter-container {
     display: flex;
     justify-content: flex-start;
@@ -44,6 +49,14 @@ body {
     padding: 0px 1em;
     border: 5px solid #394EFF;
     border-radius: 2em;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1%;
+    padding-top: 10%;
 }
 
 .sidebar {
@@ -168,7 +181,10 @@ img.resize {
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 510px) {
+    .icon-container {
+        padding-top: 0;
+    }
     .header {
         justify-content: space-between;
     }
@@ -190,7 +206,7 @@ img.resize {
     }
 
     .banner-container {
-        background-image: linear-gradient(to bottom, #62C1E5 72%, #82FFF3 80%);
+        background-image: linear-gradient(to bottom, #62C1E5 78%, #82FFF3 81%);
     }
 
     .banner {
