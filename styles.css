@@ -59,9 +59,13 @@ body {
     padding-top: 10%;
 }
 
+.icon:hover {
+    transform: scale(1.25);
+}
+
 .sidebar {
     display: none;
-    background-image: linear-gradient(to bottom, #82fff3, #00e0ff, #00bbff, #008fff, #394eff);
+    background-image: linear-gradient(to bottom, #82fff3, #00e0ff, #00bbff 85%, #008fff 90%, #394eff 95%);
     max-width: 20rem;
     padding-right: 1rem;
 }
