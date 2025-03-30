@@ -60,7 +60,7 @@ body {
 }
 
 .icon:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 .sidebar {
@@ -185,6 +185,21 @@ img.resize {
     }
 }
 
+@keyframes shimmer {
+    0% {
+        background-position-y: 75%;
+    }
+    24% {
+        background-position-y: 77%;
+    }
+    70% {
+        background-position-y: 70%;
+    }
+    100% {
+        background-position-y: 75%;
+    }
+}
+
 @media screen and (min-width: 510px) {
     .icon-container {
         padding-top: 0;
@@ -210,7 +225,9 @@ img.resize {
     }
 
     .banner-container {
-        background-image: linear-gradient(to bottom, #62C1E5 78%, #82FFF3 81%);
+        background-image: linear-gradient(to bottom, #62C1E5 77%, #82FFF3 79%);
+        background-size: 100% 200%;
+        animation: shimmer 7.1s cubic-bezier(.65,.7,.5,.55) infinite;
     }
 
     .banner {
