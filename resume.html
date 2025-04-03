@@ -12,19 +12,6 @@
         <div class="page">
             <div class="spacer">
                 <img class="resize" src="island.png" alt="island">
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 25 150 60" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                <linearGradient id="sky-ocean" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#62C1E5" />
-                    <stop offset="15%" stop-color="#82FFF3" />
-                  </linearGradient>
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="url(#sky-ocean)" />
-                </g>
-                </svg>
             </div>
             <div class="banner-container">
                 <div class="banner">
@@ -131,7 +118,19 @@
                         </svg>
                     </div>
                 </div>
-            </div>       
+            </div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 25 150 60" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#82FFF3" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#82FFF3" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#82FFF3" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#82FFF3" />
+                </g>
+            </svg>       
             <div class="sidebar">
                 <div id="sidenav" class="sidenav">
                     <p id="Top-Anchor"><a href="#Top">Resume</a></p>
