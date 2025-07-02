@@ -1,18 +1,28 @@
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0px 1em;
 }
 
 .logo {
-    width: 10%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .name {
     font-size: 2em;
     font-weight: bold;
     color: #394eff;
+    width: 100%;
 }
 
 .hamburger {
