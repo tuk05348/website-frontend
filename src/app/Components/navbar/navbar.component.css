@@ -15,7 +15,20 @@
     cursor: pointer;
 }
 
+.link-container {
+    display: block;
+}
+
 @media (max-width: 768px) {
+
+    .link-container {
+        display: none;
+    }
+
+    .link-container.open {
+        display: block;
+    }
+
     .hamburger {
         display: block;
     }
