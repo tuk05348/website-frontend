@@ -1,0 +1,22 @@
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #394eff;
+}
+
+.hamburger {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
