@@ -1,3 +1,9 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 0px 1em;
+}
+
 .logo {
     width: 10%;
     height: auto;
@@ -16,7 +22,23 @@
 }
 
 .link-container {
-    display: block;
+    display: flex;
+    gap: 1em;
+}
+
+.link {
+    color: #808080;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #FFA500;
+}
+
+.highlight {
+    color: #FFA500;
 }
 
 @media (max-width: 768px) {

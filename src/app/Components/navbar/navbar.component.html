@@ -1,4 +1,4 @@
-<nav>
+<nav class="nav-container">
     <div class="logo-container">
         <img class="logo" src="logo.png" alt="logo">
         <span class="name">NIAZ</span>
@@ -7,9 +7,9 @@
         &#9776;
     </div>
     <div class="link-container" [class.open]="menuOpen">
-        <a routerLink="/" (click)="menuOpen = false">Home</a>
-        <a routerLink="/about" (click)="menuOpen = false">About</a>
-        <a routerLink="/projects" (click)="menuOpen = false">Projects</a>
-        <a routerLink="/contact" (click)="menuOpen = false">Contact</a>
+        <a class="link" routerLink="/" routerLinkActive="highlight" [routerLinkActiveOptions]="{exact: true}" (click)="menuOpen = false">Home</a>
+        <a class="link" routerLink="/about" routerLinkActive="highlight" (click)="menuOpen = false">About</a>
+        <a class="link" routerLink="/projects" routerLinkActive="highlight" (click)="menuOpen = false">Projects</a>
+        <a class="link" routerLink="/contact" routerLinkActive="highlight" (click)="menuOpen = false">Contact</a>
     </div>
 </nav>
