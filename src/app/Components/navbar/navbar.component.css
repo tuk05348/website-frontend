@@ -60,11 +60,36 @@
         z-index: 2;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        position: absolute;
+        width: 14em;
+        top: 4em;
+        right: 4em;
+        background-color: #D3D3D3;
+        gap: 0px;
     }
 
     .link-container.open {
         display: flex;
+    }
+
+    .link {
+        display: flex;
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .link:not(:last-child) {
+        border-bottom: #000000 2px solid;
+    }
+
+    .link:hover {
+        color: #FFFFFF;
+        background-color: #FFA500;
     }
 
     .hamburger {
