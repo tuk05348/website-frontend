@@ -5,9 +5,9 @@
         </div>
         <span class="name">NIAZ</span>
     </div>
-    <div class="hamburger" (click)="menuOpen = !menuOpen">
+    <button class="hamburger" (click)="menuOpen = !menuOpen">
         &#9776;
-    </div>
+    </button>
     <div class="link-container" [class.open]="menuOpen">
         <a class="link" routerLink="/" routerLinkActive="highlight" [routerLinkActiveOptions]="{exact: true}" (click)="menuOpen = false">Home</a>
         <a class="link" routerLink="/about" routerLinkActive="highlight" (click)="menuOpen = false">About</a>

@@ -30,7 +30,9 @@
 .hamburger {
     display: none;
     font-size: 3rem;
+    background-color: #D3D3D3;
     cursor: pointer;
+    padding: 0px 0.15em 0.1em;
 }
 
 .link-container {
@@ -57,14 +59,15 @@
 
     .link-container {
         display: none;
+        box-sizing: border-box;
         z-index: 2;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         position: absolute;
-        width: 14em;
-        top: 4em;
-        right: 4em;
+        width: 15em;
+        top: 5.1em;
+        right: 1.5em;
         background-color: #D3D3D3;
         gap: 0px;
     }
@@ -81,6 +84,7 @@
         font-weight: bold;
         width: 100%;
         justify-content: center;
+        padding: 0.2em 0px;
     }
 
     .link:not(:last-child) {
