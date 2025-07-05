@@ -1,0 +1,18 @@
+.photo {
+    border: #808080 5px solid;
+    border-radius: 50%;
+    max-width: 30%;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 1em;
+}
