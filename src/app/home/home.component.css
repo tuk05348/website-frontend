@@ -1,13 +1,37 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 10%;
+    gap: 7%;
+}
+
 .photo {
-    border: #808080 5px solid;
+    border: #36454F 5px solid;
     border-radius: 50%;
     max-width: 30%;
 }
 
-.photo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    padding: 1em 0px;
+#download-link {
+    width: fit-content;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, #FF474D 40%, #FF7074 50%, #FF474D 60%);
+    background-size: 300%;
+    background-position-x: 100%;
+    padding: 0.75em;
+    animation: shimmer 1s infinite linear;
+    border-radius: 1em;
+}
+
+#download-link:hover, #download-link:active {
+    background: linear-gradient(-45deg, #FF7074 40%, #FF999C 50%, #FF7074 60%);
+    background-size: 300%;
+    background-position-x: 100%;
+}
+
+@keyframes shimmer {
+    to {
+        background-position-x: 0%
+    }
 }
