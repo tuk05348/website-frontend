@@ -1,15 +1,27 @@
 .home-container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     padding: 3% 10%;
     gap: 7%;
 }
 
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .photo {
     border: #36454F 5px solid;
     border-radius: 50%;
-    max-width: 30%;
+    width: 25vw;
 }
 
 #download-link {
