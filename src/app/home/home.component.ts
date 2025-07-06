@@ -14,6 +14,8 @@ export class HomeComponent {
   bio: string = ''; 
 
   ngOnInit() {
+    this.bio = localStorage.getItem('bio') || '';
+
     this.bioService.getBio().subscribe(
       data => {
         this.bio = data.bio;

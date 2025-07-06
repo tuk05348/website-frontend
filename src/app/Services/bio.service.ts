@@ -13,6 +13,12 @@ export class BioService {
   private readonly http = inject(HttpClient);
 
   getBio(): Observable<User> {
-    return this.http.get<User>(url);
+    let bio = this.http.get<User>(url);
+    bio.subscribe(
+      data => {
+        localStorage.setItem('bio', data.bio);
+      }
+    )
+    return bio;
   }
 }
