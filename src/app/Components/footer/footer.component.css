@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: center;
     gap: 2em;
+    padding-top: 5%;
 }
 
 .icon:hover {

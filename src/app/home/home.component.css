@@ -1,6 +1,6 @@
 .home-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3% 10%;
@@ -10,6 +10,7 @@
 .intro-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 1.5em;
 }
 
@@ -21,7 +22,7 @@
 .photo {
     border: #36454F 5px solid;
     border-radius: 50%;
-    width: 30%;
+    width: 70%;
 }
 
 #download-link {
@@ -45,5 +46,24 @@
 @keyframes shimmer {
     to {
         background-position-x: 0%
+    }
+}
+
+@media (min-width: 768px) {
+    .home-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 10%;
+        gap: 7%;
+    }
+
+    .photo {
+        width: 30%;
+    }
+
+    .intro-container {
+        text-align: start;
     }
 }
