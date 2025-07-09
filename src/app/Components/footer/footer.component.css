@@ -12,6 +12,10 @@
     fill: #36454F;
 }
 
+.linkedin {
+    width: 50px;
+}
+
 .link:hover {
     transform: scale(1.15);
 }
