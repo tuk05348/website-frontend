@@ -1,0 +1,42 @@
+[
+    {
+        "title": "niazbaharudeen.com",
+        "image_url": "website.png",
+        "image_title": "What a cool website",
+        "alt_text": "Screenshot of this website",
+        "github_url": "",
+        "year": 2025,
+        "short_desc": "Personal Website",
+        "long_desc": "Portfolio website built in Angular to show off my skills, experience, and projects"
+    },
+    {
+        "title": "CookSys Platform",
+        "image_url": "website.png",
+        "image_title": "",
+        "alt_text": "",
+        "github_url": "",
+        "year": 2025,
+        "short_desc": "Project Management Dashboard",
+        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+    },
+    {
+        "title": "Quizify",
+        "image_url": "website.png",
+        "image_title": "",
+        "alt_text": "",
+        "github_url": "",
+        "year": 2025,
+        "short_desc": "Spotify Guessing Game",
+        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+    },
+    {
+        "title": "Twitter Clone API",
+        "image_url": "website.png",
+        "image_title": "",
+        "alt_text": "",
+        "github_url": "",
+        "year": 2025,
+        "short_desc": "RESTful Web Service",
+        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+    }
+]
