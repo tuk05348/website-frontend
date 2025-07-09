@@ -14,7 +14,7 @@
         "image_url": "website.png",
         "image_title": "",
         "alt_text": "",
-        "github_url": "",
+        "github_url": "https://github.com/tuk05348/final-project",
         "year": 2025,
         "short_desc": "Project Management Dashboard",
         "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
@@ -24,7 +24,7 @@
         "image_url": "website.png",
         "image_title": "",
         "alt_text": "",
-        "github_url": "",
+        "github_url": "https://github.com/tuk05348/whos-who",
         "year": 2025,
         "short_desc": "Spotify Guessing Game",
         "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
@@ -34,7 +34,7 @@
         "image_url": "website.png",
         "image_title": "",
         "alt_text": "",
-        "github_url": "",
+        "github_url": "https://github.com/tuk05348/social-media",
         "year": 2025,
         "short_desc": "RESTful Web Service",
         "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
