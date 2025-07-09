@@ -1,11 +1,11 @@
 <div class="project-card bold">
     <div class="link-container">
-        <a>
+        <a class="link" [href]="project.github_url" target="_blank" rel="noopener noreferrer">
             <svg class="link-icon" github></svg>
         </a>
     </div>
     <div class="project">
-        <img class="project-image" [src]="project.image_url" [alt]="project.alt_text">
+        <img class="project-image" [src]="project.image_url" [alt]="project.alt_text" [title]="project.image_title">
         <div class="content">
             <h2>{{ project.title }}</h2>
             <div class="short-desc">

@@ -16,6 +16,10 @@
     justify-content: flex-end;
 }
 
+.link:hover {
+    transform: scale(1.15);
+}
+
 .link-icon {
     width: 30px;
     fill: #36454F;

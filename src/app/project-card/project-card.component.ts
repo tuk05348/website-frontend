@@ -13,6 +13,7 @@ export class ProjectCardComponent {
   @Input() project: Project = {
     title: '',
     image_url: '',
+    image_title: '',
     alt_text: '',
     github_url: '',
     year: 0,
