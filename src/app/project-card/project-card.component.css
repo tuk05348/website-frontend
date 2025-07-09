@@ -1,0 +1,51 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: #36454F 3px solid;
+    border-radius: 15px;
+    padding: 3%;
+    max-width: 30rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-icon {
+    width: 30px;
+    fill: #36454F;
+}
+
+.project-image {
+    width: 150px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.project {
+    display: flex;
+    gap: 1em;
+}
+
+.short-desc {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.year {
+    color: #FAF9F6;
+    border-radius: 1em;
+    padding: 0.2em 0.3em;
+    background-color: #36454F;
+}
+
+.short {
+    color: #808080;
+    font-size: 1.17em;
+}
