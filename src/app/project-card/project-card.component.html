@@ -5,14 +5,14 @@
         </a>
     </div>
     <div class="project">
-        <img class="project-image" src="website.png" alt="Screenshot of this website">
+        <img class="project-image" [src]="project.image_url" [alt]="project.alt_text">
         <div class="content">
-            <h2>niazbaharudeen.com</h2>
+            <h2>{{ project.title }}</h2>
             <div class="short-desc">
-                <span class="year">2025</span>
-                <span class="short">Personal Website</span>
+                <span class="year">{{ project.year }}</span>
+                <span class="short">{{ project.short_desc }}</span>
             </div>
-            <p class="long-desc">Portfolio website built in Angular to show off my skills, experience, and projects</p>
+            <p class="long-desc">{{ project.long_desc }}</p>
         </div>
     </div>
 </div>
