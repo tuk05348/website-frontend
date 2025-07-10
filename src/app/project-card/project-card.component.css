@@ -1,6 +1,7 @@
 .project-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     border: #36454F 3px solid;
     border-radius: 15px;

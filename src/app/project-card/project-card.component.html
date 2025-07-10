@@ -1,5 +1,5 @@
 <div class="project-card bold">
-    <div class="link-container">
+    <div class="link-container" *ngIf="project.github_url">
         <a class="link" [href]="project.github_url" target="_blank" rel="noopener noreferrer">
             <svg class="link-icon" github></svg>
         </a>

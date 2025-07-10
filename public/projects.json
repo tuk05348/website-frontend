@@ -13,7 +13,7 @@
         "title": "CookSys Platform",
         "image_url": "dashboard.png",
         "image_title": "This was a really cool project to contribute to",
-        "alt_text": "Screenshot of the CookSys Platform Announcements Page",
+        "alt_text": "CookSys Platform Announcements Page",
         "github_url": "https://github.com/tuk05348/final-project",
         "year": 2025,
         "short_desc": "Project Management Dashboard",
@@ -21,9 +21,9 @@
     },
     {
         "title": "Quizify",
-        "image_url": "website.png",
-        "image_title": "",
-        "alt_text": "",
+        "image_url": "quizify.png",
+        "image_title": "Don't tell Kahoot we used their music!",
+        "alt_text": "Login page of the Quizify game",
         "github_url": "https://github.com/tuk05348/whos-who",
         "year": 2025,
         "short_desc": "Spotify Guessing Game",
@@ -31,9 +31,9 @@
     },
     {
         "title": "Twitter Clone API",
-        "image_url": "website.png",
-        "image_title": "",
-        "alt_text": "",
+        "image_url": "twitter.png",
+        "image_title": "So many endpoints to implement",
+        "alt_text": "Backend code for reposting a tweet",
         "github_url": "https://github.com/tuk05348/social-media",
         "year": 2025,
         "short_desc": "RESTful Web Service",
@@ -51,12 +51,32 @@
     },
     {
         "title": "Guitar String",
-        "image_url": "website.png",
-        "image_title": "",
-        "alt_text": "",
+        "image_url": "guitarhero.jpg",
+        "image_title": "Jamming out to my keyboard",
+        "alt_text": "Guitar Hero app which plays music by binding multiple Guitar Strings to keyboard",
         "github_url": "https://github.com/tuk05348/GuitarString",
         "year": 2024,
         "short_desc": "Virtual Instrument Keyboard",
         "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them"
+    },
+    {
+        "title": "Phishing Email Detection",
+        "image_url": "phish.png",
+        "image_title": "Kaggle is an invaluable resource",
+        "alt_text": "Python code for the KNN model used for phishing email detection",
+        "github_url": "",
+        "year": 2024,
+        "short_desc": "Data Science Project",
+        "long_desc": "Machine learning model that uses the K-Nearest-Neighbors algorithm to detect phishing emails"
+    },
+    {
+        "title": "Interactive Shell",
+        "image_url": "shell.png",
+        "image_title": "Hardest project I've ever worked on",
+        "alt_text": "C code for implementing piping in the shell",
+        "github_url": "",
+        "year": 2023,
+        "short_desc": "Linux C Shell",
+        "long_desc": "Shell written in C to let user run programs and redirect and pipe input/output"
     }
 ]
