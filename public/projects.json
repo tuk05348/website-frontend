@@ -60,6 +60,16 @@
         "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them"
     },
     {
+        "title": "BlastPad",
+        "image_url": "blastpad.png",
+        "image_title": "Building hardware and writing software at the same time is an ... interesting experience",
+        "alt_text": "Me playing Brick Breaker on the BlastPad console",
+        "github_url": "https://github.com/Capstone-Projects-2024-Spring/project-blastpad",
+        "year": 2024,
+        "short_desc": "Handheld Console",
+        "long_desc": "An educational console to teach students programming by letting them build, play, and share their own games"
+    },
+    {
         "title": "Phishing Email Detection",
         "image_url": "phish.png",
         "image_title": "Kaggle is an invaluable resource",
@@ -68,6 +78,16 @@
         "year": 2024,
         "short_desc": "Data Science Project",
         "long_desc": "Machine learning model that uses the K-Nearest-Neighbors algorithm to detect phishing emails"
+    },
+    {
+        "title": "Orthography Overlord",
+        "image_url": "worddifficulty.png",
+        "image_title": "The greatest algorithm I've ever written",
+        "alt_text": "Word difficulty algorithm I wrote for the game",
+        "github_url": "https://github.com/cis3296f23/Orthography-Overlord",
+        "year": 2024,
+        "short_desc": "Desktop Spelling Game",
+        "long_desc": "A spelling game that challenges the user to spell a word based on audio sourced from the Merriam-Webster API"
     },
     {
         "title": "Interactive Shell",
