@@ -11,9 +11,9 @@
     },
     {
         "title": "CookSys Platform",
-        "image_url": "website.png",
-        "image_title": "",
-        "alt_text": "",
+        "image_url": "dashboard.png",
+        "image_title": "This was a really cool project to contribute to",
+        "alt_text": "Screenshot of the CookSys Platform Announcements Page",
         "github_url": "https://github.com/tuk05348/final-project",
         "year": 2025,
         "short_desc": "Project Management Dashboard",
@@ -37,6 +37,26 @@
         "github_url": "https://github.com/tuk05348/social-media",
         "year": 2025,
         "short_desc": "RESTful Web Service",
-        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+        "long_desc": "API built in Spring to retrieve, create, update, and delete users, hashtags, mentions,and posts"
+    },
+    {
+        "title": "Visitor Count API",
+        "image_url": "backend.png",
+        "image_title": "CORS still gives me nightmares",
+        "alt_text": "Screenshot of the Python code that updates the visitor count",
+        "github_url": "https://github.com/tuk05348/website-backend",
+        "year": 2025,
+        "short_desc": "RESTful Web Service",
+        "long_desc": "API written in Python and provisioned using Infrastructure-as-Code on AWS Cloud to update the number of visitors to this website on page load"
+    },
+    {
+        "title": "Guitar String",
+        "image_url": "website.png",
+        "image_title": "",
+        "alt_text": "",
+        "github_url": "https://github.com/tuk05348/GuitarString",
+        "year": 2024,
+        "short_desc": "Virtual Instrument Keyboard",
+        "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them"
     }
 ]

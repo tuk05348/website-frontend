@@ -7,12 +7,12 @@
     <div class="project">
         <img class="project-image" [src]="project.image_url" [alt]="project.alt_text" [title]="project.image_title">
         <div class="content">
-            <h2>{{ project.title }}</h2>
+            <span class="title">{{ project.title }}</span>
             <div class="short-desc">
                 <span class="year">{{ project.year }}</span>
                 <span class="short">{{ project.short_desc }}</span>
             </div>
-            <p class="long-desc">{{ project.long_desc }}</p>
+            <span class="long-desc">{{ project.long_desc }}</span>
         </div>
     </div>
 </div>

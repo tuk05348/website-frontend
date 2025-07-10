@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border: #36454F 3px solid;
     border-radius: 15px;
+    background-color: #FFFFFF;
     padding: 3%;
     max-width: 30rem;
     height: 100%;
@@ -29,14 +30,27 @@
 
 .project-image {
     width: 150px;
+    height: 160px;
     object-fit: cover;
-    object-position: left;
+    border-radius: 10px;
 }
 
 .project {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
     gap: 1em;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .short-desc {
