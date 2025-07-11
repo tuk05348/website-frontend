@@ -1,12 +1,36 @@
 <div class="contact-page">
     <h1>Contact Me</h1>
-    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" #form="ngForm">
         <label for="name">Name:</label>
-        <input class="input" type="text" id="name" placeholder="full name" formControlName="name"><br>
+        <input type="text" id="name" placeholder="full name" formControlName="name" >
+        <div *ngIf="name?.invalid && (name?.dirty || name?.touched || form.submitted)" class="alert">
+            <div *ngIf="name?.hasError('required')">
+                Name is required
+            </div>
+        </div>
+        <br>
         <label for="email">Email:</label>
-        <input class="input" type="email" id="email" placeholder="email" formControlName="email"><br>
+        <input type="email" id="email" placeholder="email" formControlName="email">
+        <div *ngIf="email?.invalid && (email?.dirty || email?.touched || form.submitted)" class="alert">
+            <div *ngIf="email?.hasError('required')">
+                Email is required
+            </div>
+            <div *ngIf="email?.hasError('email')">
+                Email is invalid
+            </div>
+        </div>
+        <br>
         <label for="message">Message:</label>
-        <textarea class="input-area" id="message" name="message" placeholder="message ..." formControlName="message"></textarea><br>
-        <button class="submit" type="submit" [disabled]="!contactForm.valid">Submit</button>
+        <textarea id="message" name="message" placeholder="message ..." rows="5" formControlName="message"></textarea>
+        <div *ngIf="message?.invalid && (message?.dirty || message?.touched || form.submitted)" class="alert">
+            <div *ngIf="message?.hasError('required')">
+                Message is required
+            </div>
+            <div *ngIf="message?.hasError('maxlength')">
+                Message cannot be longer than 200 characters
+            </div>
+        </div>
+        <br>
+        <button class="submit" type="submit">Submit</button>
     </form>
 </div>
