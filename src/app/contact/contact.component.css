@@ -1,0 +1,36 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+h2 {
+    display: inline;
+}
+
+.input {
+    padding: 5px;
+}
+
+.input-area {
+    padding: 5px 5px 20px;
+}
+
+.submit {
+    background-color: #FF474D;
+    color: #FFFFFF;
+    border-radius: 1em;
+    font-size: 1.25rem;
+}
+
+.submit:hover {
+    background-color: #FF7074;
+}
