@@ -1,16 +1,15 @@
 <div class="contact-page">
     <h1>Contact Me</h1>
     <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" #form="ngForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="full name" formControlName="name" >
+        <label class="input-label" for="name">Name:</label>
+        <input class="input" type="text" id="name" placeholder="full name" formControlName="name" >
         <div *ngIf="name?.invalid && (name?.dirty || name?.touched || form.submitted)" class="alert">
             <div *ngIf="name?.hasError('required')">
                 Name is required
             </div>
         </div>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="email" formControlName="email">
+        <label class="input-label" for="email">Email:</label>
+        <input class="input" type="email" id="email" placeholder="email" formControlName="email">
         <div *ngIf="email?.invalid && (email?.dirty || email?.touched || form.submitted)" class="alert">
             <div *ngIf="email?.hasError('required')">
                 Email is required
@@ -19,9 +18,8 @@
                 Email is invalid
             </div>
         </div>
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="message ..." rows="5" formControlName="message"></textarea>
+        <label class="input-label" for="message">Message:</label>
+        <textarea class="input" id="message" name="message" placeholder="message ..." rows="5" formControlName="message"></textarea>
         <div *ngIf="message?.invalid && (message?.dirty || message?.touched || form.submitted)" class="alert">
             <div *ngIf="message?.hasError('required')">
                 Message is required
