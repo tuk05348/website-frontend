@@ -2,11 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30rem;
+    justify-content: center;
+    padding: 0px 1em;
+    width: 80vw;
 }
 
 .contact-form {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     font-weight: bold;
     gap: 0.5em;
@@ -59,4 +62,11 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
 .alert div {
   color: #820000;
   font-size: 1em;
+}
+
+@media (min-width: 1024px) {
+    .contact-page {
+        width: 40vw;
+        max-width: 30rem;
+    }
 }
