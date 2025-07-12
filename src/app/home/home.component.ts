@@ -14,13 +14,13 @@ export class HomeComponent {
   bio: string = ''; 
 
   ngOnInit() {
-    this.bio = localStorage.getItem('bio') || '';
+    this.bio = localStorage.getItem('bio') || ''; //set bio to bio in local storage, if null, set to empty string
 
-    this.bioService.getBio().subscribe(
-      data => {
+    this.bioService.getBio().subscribe( //subscribe to bio service
+      data => { //set bio to bio returned from api service
         this.bio = data.bio;
       }
-    )
+    );
   }
 
 }

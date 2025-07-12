@@ -10,6 +10,8 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 })
 export class ContactComponent {
 
+  formSubmitted: boolean = false; //member to track whether form has been successfully submitted
+
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -17,9 +19,13 @@ export class ContactComponent {
   })
 
   onSubmit() {
-    console.log(this.contactForm.value)
+    if(this.contactForm.valid) {
+      console.log(this.contactForm.value);
+      this.formSubmitted = true;
+    }
   }
 
+  //getters to get form controls from the form group
   get name() {
     return this.contactForm.get('name');
   }

@@ -10,15 +10,15 @@ const url = 'https://api.github.com/users/tuk05348';
 })
 export class BioService {
 
-  private readonly http = inject(HttpClient);
+  private readonly http = inject(HttpClient); //inject http client from provider in config
 
-  getBio(): Observable<User> {
-    let bio = this.http.get<User>(url);
+  getBio(): Observable<User> { //get bio from github api, returns an observable of type user
+    let bio = this.http.get<User>(url); //get user bio from api
     bio.subscribe(
       data => {
-        localStorage.setItem('bio', data.bio);
+        localStorage.setItem('bio', data.bio); //save bio in local storage
       }
     )
-    return bio;
+    return bio; //return bio
   }
 }

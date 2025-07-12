@@ -11,5 +11,5 @@ import { NgFor } from '@angular/common';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  projects: Project[] = projects_json as Project[]
+  projects: Project[] = projects_json as Project[]; //import project array from json file
 }

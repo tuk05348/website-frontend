@@ -27,6 +27,7 @@ input::placeholder, textarea::placeholder {
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
   border: 1px solid rgba(255, 71, 77, 0.75);
+  border-radius: 2px;
 }
 
 .input {
@@ -66,7 +67,6 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
 
 @media (min-width: 1024px) {
     .contact-page {
-        width: 40vw;
-        max-width: 30rem;
+        width: 30rem;
     }
 }
