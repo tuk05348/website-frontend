@@ -1,18 +1,18 @@
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { User } from '../Interfaces/user';
 import { HttpClient } from '@angular/common/http';
+import { Count } from '../Interfaces/count';
 
-const url = 'https://api.github.com/users/tuk05348';
+const apiUrl = 'https://ktuqr1ij83.execute-api.us-east-1.amazonaws.com/stage/visitorcount';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BioService {
+export class VisitorCountService {
 
   private readonly http = inject(HttpClient); //inject http client from provider in config
 
-  getBio(): Observable<User> { //get bio from github api, returns an observable of type user
-    return this.http.get<User>(url); //get user bio from api
+  getVisitorCount(): Observable<Count> {
+    return this.http.get<Count>(apiUrl);
   }
 }

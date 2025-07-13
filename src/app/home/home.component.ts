@@ -19,6 +19,7 @@ export class HomeComponent {
     this.bioService.getBio().subscribe( //subscribe to bio service
       data => { //set bio to bio returned from api service
         this.bio = data.bio;
+        localStorage.setItem('bio', data.bio); //save bio in local storage
       }
     );
   }
