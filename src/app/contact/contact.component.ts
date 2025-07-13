@@ -40,6 +40,7 @@ export class ContactComponent {
 
   onSubmit(e: Event) {
     if(this.contactForm.valid) {
+      this.formSubmitted = true;
       emailjs.sendForm(serviceId, templateId, e.target as HTMLFormElement, {
         publicKey: myPublicKey,
       })

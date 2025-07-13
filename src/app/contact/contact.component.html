@@ -31,11 +31,13 @@
         <br>
         <button class="submit" type="submit">Submit</button>
     </form>
-    <div *ngIf="formSuccess">
+    <div class="loader" *ngIf="formSubmitted && !formSuccess && !formError"></div>
+    <div class="message" *ngIf="formSuccess">
         <h2>Message sent!</h2><br>
+        <img src="email.gif" alt="Gif of a flying email" title="it's so cute!">
         <h2> You'll hear back from me soon!</h2>
     </div>
-    <div *ngIf="formError">
+    <div class="message" *ngIf="formError">
         <h2>There was an error sending your message</h2><br>
         <h2>Please try again later or email me directly at niazbaharudeen&#64;gmail.com</h2>
     </div>

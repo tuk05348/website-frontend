@@ -1,10 +1,13 @@
+h1, h2 {
+    display: inline;
+}
+
 .contact-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0px 1em;
-    width: 80vw;
 }
 
 .contact-form {
@@ -13,11 +16,7 @@
     flex-direction: column;
     font-weight: bold;
     gap: 0.5em;
-    width: 100%;
-}
-
-h1, h2 {
-    display: inline;
+    width: 80vw;
 }
 
 input::placeholder, textarea::placeholder {
@@ -65,8 +64,43 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
   font-size: 1em;
 }
 
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite
+    }
+    .loader::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #36454F;
+      animation: prixClipFix 2s linear infinite ;
+    }
+
+    @keyframes rotate {
+      100%   {transform: rotate(360deg)}
+    }
+
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+    }
+
 @media (min-width: 1024px) {
-    .contact-page {
+    .contact-form {
         width: 30rem;
     }
 }
