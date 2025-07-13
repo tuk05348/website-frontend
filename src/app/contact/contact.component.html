@@ -25,7 +25,7 @@
                 Message is required
             </div>
             <div *ngIf="message?.hasError('maxlength')">
-                Message cannot be longer than 200 characters
+                Message cannot be longer than {{ characterLimit }} characters
             </div>
         </div>
         <br>

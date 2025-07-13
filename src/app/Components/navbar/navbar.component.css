@@ -1,9 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 1em;
+}
+
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 1em;
     z-index: 1;
+}
+
+.counter {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .logo {

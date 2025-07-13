@@ -10,4 +10,10 @@ import { RouterModule } from '@angular/router';
 export class NavbarComponent {
   
   menuOpen: boolean = false; //variable to track whether the hamburger menu on mobile/tablet is open
+
+  visitorCount: number = 0;
+
+  ngOnInit() {
+    
+  }
 }

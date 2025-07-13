@@ -18,11 +18,12 @@ export class ContactComponent {
   formSubmitted: boolean = false; //member to track whether form has been successfully submitted
   formSuccess: boolean = false;
   formError: boolean = false;
+  characterLimit: number = 500;
 
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
-    message: new FormControl('', [Validators.required, Validators.maxLength(200)]) 
+    message: new FormControl('', [Validators.required, Validators.maxLength(this.characterLimit)]) 
   })
 
   //getters to get form controls from the form group
