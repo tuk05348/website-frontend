@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Count } from '../Interfaces/count';
 
-const apiUrl = 'https://ktuqr1ij83.execute-api.us-east-1.amazonaws.com/stage/visitorcount';
+const apiUrl = 'https://l1m3x0q9m3.execute-api.us-east-1.amazonaws.com/prod/visitorcount/';
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VisitorCountService } from '../../Services/visitor-count.service';
-import { Observable } from 'rxjs';
-import { Count } from '../../Interfaces/count';
 
 @Component({
   selector: 'app-navbar',
