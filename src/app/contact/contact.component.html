@@ -1,15 +1,15 @@
 <div class="contact-page">
     <h1>Contact Me</h1>
-    <form *ngIf="!formSubmitted" class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" #form="ngForm">
+    <form *ngIf="!formSubmitted" class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)" #form="ngForm">
         <label class="input-label" for="name">Name:</label>
-        <input class="input" type="text" id="name" placeholder="full name" formControlName="name" >
+        <input class="input" type="text" id="name" name="name" placeholder="full name" formControlName="name" >
         <div *ngIf="name?.invalid && (name?.dirty || name?.touched || form.submitted)" class="alert">
             <div *ngIf="name?.hasError('required')">
                 Name is required
             </div>
         </div>
         <label class="input-label" for="email">Email:</label>
-        <input class="input" type="email" id="email" placeholder="email" formControlName="email">
+        <input class="input" type="email" id="email" name="email" placeholder="email" formControlName="email">
         <div *ngIf="email?.invalid && (email?.dirty || email?.touched || form.submitted)" class="alert">
             <div *ngIf="email?.hasError('required')">
                 Email is required
@@ -31,8 +31,12 @@
         <br>
         <button class="submit" type="submit">Submit</button>
     </form>
-    <div *ngIf="formSubmitted">
+    <div *ngIf="formSuccess">
         <h2>Message sent!</h2><br>
         <h2> You'll hear back from me soon!</h2>
+    </div>
+    <div *ngIf="formError">
+        <h2>There was an error sending your message</h2><br>
+        <h2>Please try again later or email me directly at niazbaharudeen&#64;gmail.com</h2>
     </div>
 </div>
