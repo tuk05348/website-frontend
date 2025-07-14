@@ -45,7 +45,7 @@ jobs:
 
       - name: sync s3
         run: |
-          aws s3 sync .dist/portfolio/browser/ s3://${{ env.BUCKET_NAME }}/ --delete
+          aws s3 sync ./dist/portfolio/browser/ s3://${{ env.BUCKET_NAME }}/ --delete
 
       - name: invalidate caches
         env: 
