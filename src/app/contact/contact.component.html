@@ -1,0 +1,44 @@
+<div class="contact-page">
+    <h1>Contact Me</h1>
+    <form *ngIf="!formSubmitted" class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)" #form="ngForm">
+        <label class="input-label" for="name">Name:</label>
+        <input class="input" type="text" id="name" name="name" placeholder="full name" formControlName="name" >
+        <div *ngIf="name?.invalid && (name?.dirty || name?.touched || form.submitted)" class="alert">
+            <div *ngIf="name?.hasError('required')">
+                Name is required
+            </div>
+        </div>
+        <label class="input-label" for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" placeholder="email" formControlName="email">
+        <div *ngIf="email?.invalid && (email?.dirty || email?.touched || form.submitted)" class="alert">
+            <div *ngIf="email?.hasError('required')">
+                Email is required
+            </div>
+            <div *ngIf="email?.hasError('email')">
+                Email is invalid
+            </div>
+        </div>
+        <label class="input-label" for="message">Message:</label>
+        <textarea class="input" id="message" name="message" placeholder="message ..." rows="5" formControlName="message"></textarea>
+        <div *ngIf="message?.invalid && (message?.dirty || message?.touched || form.submitted)" class="alert">
+            <div *ngIf="message?.hasError('required')">
+                Message is required
+            </div>
+            <div *ngIf="message?.hasError('maxlength')">
+                Message cannot be longer than {{ characterLimit }} characters
+            </div>
+        </div>
+        <br>
+        <button class="submit" type="submit">Submit</button>
+    </form>
+    <div class="loader" *ngIf="formSubmitted && !formSuccess && !formError"></div>
+    <div class="message" *ngIf="formSuccess">
+        <h2>Message sent!</h2><br>
+        <img src="email.gif" alt="Gif of a flying email" title="it's so cute!">
+        <h2> You'll hear back from me soon!</h2>
+    </div>
+    <div class="message" *ngIf="formError">
+        <h2>There was an error sending your message</h2><br>
+        <h2>Please try again later or email me directly at niazbaharudeen&#64;gmail.com</h2>
+    </div>
+</div>

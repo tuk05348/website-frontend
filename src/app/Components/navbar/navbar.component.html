@@ -1,0 +1,20 @@
+<div class="header">
+    <nav class="nav-container">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <span class="name">NIAZ</span>
+        </div>
+        <button class="hamburger" (click)="menuOpen = !menuOpen">
+            &#9776;
+        </button>
+        <div class="link-container" [class.open]="menuOpen">
+            <a class="link" routerLink="/" routerLinkActive="highlight" [routerLinkActiveOptions]="{exact: true}" (click)="menuOpen = false">Home</a>
+            <a class="link" routerLink="/about" routerLinkActive="highlight" (click)="menuOpen = false">About</a>
+            <a class="link" routerLink="/projects" routerLinkActive="highlight" (click)="menuOpen = false">Projects</a>
+            <a class="link" routerLink="/contact" routerLinkActive="highlight" (click)="menuOpen = false">Contact</a>
+        </div>
+    </nav>
+    <span class="counter">Total Views: {{ count }}</span>
+</div>

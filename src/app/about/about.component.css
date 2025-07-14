@@ -1,0 +1,10 @@
+.about {
+    padding: 0px 1em 1em;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}

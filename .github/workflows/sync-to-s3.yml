@@ -24,9 +24,29 @@ jobs:
           role-to-assume: arn:aws:iam::205930627269:role/S3-Sync-Github-Actions-Role
           role-session-name: s3-role-session
           aws-region: ${{ env.AWS_REGION }}
+
+      - name: set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.9.0'
+
+      - name: set up cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json')}}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build angular
+        run: npm run build
+
       - name: sync s3
         run: |
-          aws s3 sync . s3://${{ env.BUCKET_NAME }}/ --delete --exclude '.git/*' --exclude '.github/*' --exclude 'README.md' --exclude 'Cloud_Resume_Challenge_Frontend.png'
+          aws s3 sync .dist/portfolio/browser/ s3://${{ env.BUCKET_NAME }}/ --delete
+
       - name: invalidate caches
         env: 
           DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
