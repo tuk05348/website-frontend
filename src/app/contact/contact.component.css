@@ -48,6 +48,7 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
     font-size: 1.17rem;
     font-weight: bold;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 .submit:hover {

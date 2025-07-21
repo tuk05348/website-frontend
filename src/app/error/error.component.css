@@ -1,0 +1,33 @@
+h1, h2 {
+    margin: 0;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.message {
+    padding-bottom: 1em;
+}
+
+.code {
+    font-size: 5em;
+}
+
+.back-button {
+    background-color: #FF474D;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 0.5em;
+    font-size: 1.17rem;
+    font-weight: bold;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #FF7074;
+}
