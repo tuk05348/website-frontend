@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class ErrorComponent {
 
-  private router = inject(Router);
+  private router = inject(Router); //inject router
 
-  navigateToHome() {
+  navigateToHome() { //go back to home page which has default root route
     this.router.navigateByUrl('');
   }
 

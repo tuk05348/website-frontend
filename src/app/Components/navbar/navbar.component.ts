@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VisitorCountService } from '../../Services/visitor-count.service';
+import { LogoComponent } from '../../icons/logo/logo.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterModule],
+  imports: [RouterModule, LogoComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
