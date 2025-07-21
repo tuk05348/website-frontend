@@ -1,13 +1,12 @@
 <div class="project-card bold">
-    <div class="link-container" *ngIf="project.github_url">
-        <a class="link" [href]="project.github_url" target="_blank" rel="noopener noreferrer">
-            <svg class="link-icon" github></svg>
-        </a>
-    </div>
     <div class="project">
         <img class="project-image" [src]="project.image_url" [alt]="project.alt_text" [title]="project.image_title">
         <div class="content">
-            <span class="title">{{ project.title }}</span>
+            <span *ngIf="!project.github_url" class="title">{{ project.title }}</span>
+            <a *ngIf="project.github_url" class="title-link" [href]="project.github_url" target="_blank" rel="noopener noreferrer">
+                {{ project.title }}
+                <svg class="link-icon" github></svg>
+            </a>
             <div class="short-desc">
                 <span class="year">{{ project.year }}</span>
                 <span class="short">{{ project.short_desc }}</span>
