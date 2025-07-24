@@ -5,7 +5,7 @@
             <span class="name">NIAZ</span>
         </div>
         <div class="menu">
-            <button class="hamburger" (click)="menuOpen = !menuOpen">
+            <button class="hamburger" (click)="menuOpen = !menuOpen" (clickOutside)="menuOpen = false">
                 &#9776;
             </button>
             <div class="link-container" [class.open]="menuOpen">
