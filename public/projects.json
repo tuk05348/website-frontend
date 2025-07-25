@@ -1,7 +1,7 @@
 [
     {
-        "title": "niazbaharudeen.com",
-        "image_url": "website.png",
+        "title": "Personal Website",
+        "image_url": "https://cdn.niazbaharudeen.com/website.png",
         "image_title": "What a cool website",
         "alt_text": "Screenshot of this website",
         "github_url": "https://github.com/tuk05348/website-frontend",
@@ -11,7 +11,7 @@
     },
     {
         "title": "CookSys Platform",
-        "image_url": "dashboard.png",
+        "image_url": "https://cdn.niazbaharudeen.com/dashboard.png",
         "image_title": "This was a really cool project to contribute to",
         "alt_text": "CookSys Platform Announcements Page",
         "github_url": "https://github.com/tuk05348/final-project",
@@ -21,7 +21,7 @@
     },
     {
         "title": "Quizify",
-        "image_url": "quizify.png",
+        "image_url": "https://cdn.niazbaharudeen.com/quizify.png",
         "image_title": "Don't tell Kahoot we used their music!",
         "alt_text": "Login page of the Quizify game",
         "github_url": "https://github.com/tuk05348/whos-who",
@@ -31,7 +31,7 @@
     },
     {
         "title": "Twitter Clone API",
-        "image_url": "twitter.png",
+        "image_url": "https://cdn.niazbaharudeen.com/twitter.png",
         "image_title": "So many endpoints to implement",
         "alt_text": "Backend code for reposting a tweet",
         "github_url": "https://github.com/tuk05348/social-media",
@@ -41,7 +41,7 @@
     },
     {
         "title": "Visitor Count API",
-        "image_url": "backend.png",
+        "image_url": "https://cdn.niazbaharudeen.com/backend.png",
         "image_title": "CORS still gives me nightmares",
         "alt_text": "Screenshot of the Python code that updates the visitor count",
         "github_url": "https://github.com/tuk05348/website-backend",
@@ -51,7 +51,7 @@
     },
     {
         "title": "Guitar String",
-        "image_url": "guitarhero.jpg",
+        "image_url": "https://cdn.niazbaharudeen.com/guitarstring.png",
         "image_title": "Jamming out to my keyboard",
         "alt_text": "Guitar Hero app which plays music by binding multiple Guitar Strings to keyboard",
         "github_url": "https://github.com/tuk05348/GuitarString",
@@ -61,7 +61,7 @@
     },
     {
         "title": "BlastPad",
-        "image_url": "blastpad.png",
+        "image_url": "https://cdn.niazbaharudeen.com/blastpad.png",
         "image_title": "Building hardware and writing software at the same time is an ... interesting experience",
         "alt_text": "Me playing Brick Breaker on the BlastPad console",
         "github_url": "https://github.com/Capstone-Projects-2024-Spring/project-blastpad",
@@ -71,7 +71,7 @@
     },
     {
         "title": "Phishing Email Detection",
-        "image_url": "phish.png",
+        "image_url": "https://cdn.niazbaharudeen.com/phish.png",
         "image_title": "Kaggle is an invaluable resource",
         "alt_text": "Python code for the KNN model used for phishing email detection",
         "github_url": "",
@@ -81,7 +81,7 @@
     },
     {
         "title": "Orthography Overlord",
-        "image_url": "worddifficulty.png",
+        "image_url": "https://cdn.niazbaharudeen.com/worddifficulty.png",
         "image_title": "The greatest algorithm I've ever written",
         "alt_text": "Word difficulty algorithm I wrote for the game",
         "github_url": "https://github.com/cis3296f23/Orthography-Overlord",
@@ -91,12 +91,22 @@
     },
     {
         "title": "Interactive Shell",
-        "image_url": "shell.png",
+        "image_url": "https://cdn.niazbaharudeen.com/shell.png",
         "image_title": "Hardest project I've ever worked on",
         "alt_text": "C code for implementing piping in the shell",
         "github_url": "",
         "year": 2023,
         "short_desc": "Linux C Shell",
         "long_desc": "Shell written in C to let user run programs and redirect and pipe input/output"
+    },
+    {
+        "title": "Matrix Multiplication",
+        "image_url": "https://cdn.niazbaharudeen.com/ompmpi.png",
+        "image_title": "The Wolfgand Cluster lives!",
+        "alt_text": "Chart comparing the performance of SIMD, OMP, and MPI with regards to matrix multiplication",
+        "github_url": "",
+        "year": 2023,
+        "short_desc": "Performance Comparison",
+        "long_desc": "Graphs comparing the efficiency of SIMD, OMP, and MPI using matrix multiplication tests written in C"
     }
 ]

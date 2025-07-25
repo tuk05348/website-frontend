@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VisitorCountService } from '../../Services/visitor-count.service';
+import { LogoComponent } from '../../icons/logo/logo.component';
+import { ClickOutsideDirective } from '../../Directives/click-outside.directive';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterModule],
+  imports: [RouterModule, LogoComponent, ClickOutsideDirective],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

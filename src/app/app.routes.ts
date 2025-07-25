@@ -1,8 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -11,14 +8,18 @@ export const routes: Routes = [
     },
     {
         path: 'about',
-        component: AboutComponent,
+        loadComponent: () => import('./about/about.component').then(m => m.AboutComponent),
     },
     {
         path: 'projects',
-        component: ProjectsComponent,
+        loadComponent: () => import('./projects/projects.component').then(m => m.ProjectsComponent),
     },
     {
         path: 'contact',
-        component: ContactComponent,
+        loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent),
+    },
+    {
+        path: '**',
+        loadComponent: () => import('./error/error.component').then(m => m.ErrorComponent),
     },
 ];
