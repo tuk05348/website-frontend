@@ -29,6 +29,11 @@
     width: 100%;
 }
 
+.link {
+    width: fit-content;
+    border-radius: 1em;
+}
+
 #download-link {
     width: fit-content;
     text-decoration: none;
