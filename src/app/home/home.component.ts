@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { BioService } from '../Services/bio.service';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

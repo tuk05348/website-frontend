@@ -27,6 +27,7 @@
     border: #36454F 5px solid;
     border-radius: 50%;
     width: 100%;
+    height: auto;
 }
 
 .link {
