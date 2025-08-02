@@ -31,6 +31,7 @@
 
 .project-image {
     width: 70vw;
+    height: 40vw;
     object-fit: cover;
     border-radius: 10px;
 }

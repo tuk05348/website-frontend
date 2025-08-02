@@ -1,6 +1,6 @@
 <div class="project-card bold">
     <div class="project">
-        <img class="project-image" [src]="project.image_url" [alt]="project.alt_text" [title]="project.image_title">
+        <img class="project-image" [ngSrc]="project.image_url" width="150" height="180" [alt]="project.alt_text" [title]="project.image_title">
         <div class="content">
             <span *ngIf="!project.github_url" class="title">{{ project.title }}</span>
             <a *ngIf="project.github_url" class="title-link" [href]="project.github_url" target="_blank" rel="noopener noreferrer">
