@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BioService } from '../Services/bio.service';
 import { NgOptimizedImage } from '@angular/common'
 
@@ -10,7 +10,7 @@ import { NgOptimizedImage } from '@angular/common'
 })
 export class HomeComponent {
 
-  constructor(private bioService: BioService) {}
+  private bioService = inject(BioService);
 
   bio: string = ''; 
 

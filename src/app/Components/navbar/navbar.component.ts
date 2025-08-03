@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VisitorCountService } from '../../Services/visitor-count.service';
 import { LogoComponent } from '../../icons/logo/logo.component';
@@ -16,7 +16,7 @@ export class NavbarComponent {
 
   count: string = '';
 
-  constructor(private visitorCountService: VisitorCountService) {}
+  private visitorCountService = inject(VisitorCountService);
 
   ngOnInit() {
     this.count = localStorage.getItem('count') || ''; //set count to stored count in local storage
