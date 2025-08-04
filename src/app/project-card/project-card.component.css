@@ -30,7 +30,7 @@
 }
 
 .project-image {
-    width: 70vw;
+    width: 80%;
     height: 40vw;
     object-fit: cover;
     border-radius: 10px;
