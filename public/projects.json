@@ -7,7 +7,8 @@
         "github_url": "https://github.com/tuk05348/website-frontend",
         "year": 2025,
         "short_desc": "Personal Website",
-        "long_desc": "Portfolio website built in Angular to show off my skills, experience, and projects"
+        "long_desc": "Portfolio website built in Angular to show off my skills, experience, and projects",
+        "priority": true
     },
     {
         "title": "CookSys Platform",
@@ -17,7 +18,8 @@
         "github_url": "https://github.com/tuk05348/final-project",
         "year": 2025,
         "short_desc": "Project Management Dashboard",
-        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects",
+        "priority": false
     },
     {
         "title": "Quizify",
@@ -27,7 +29,8 @@
         "github_url": "https://github.com/tuk05348/whos-who",
         "year": 2025,
         "short_desc": "Spotify Guessing Game",
-        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects"
+        "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects",
+        "priority": false
     },
     {
         "title": "Twitter Clone API",
@@ -37,7 +40,8 @@
         "github_url": "https://github.com/tuk05348/social-media",
         "year": 2025,
         "short_desc": "RESTful Web Service",
-        "long_desc": "API built in Spring to retrieve, create, update, and delete users, hashtags, mentions,and posts"
+        "long_desc": "API built in Spring to retrieve, create, update, and delete users, hashtags, mentions,and posts",
+        "priority": false
     },
     {
         "title": "Visitor Count API",
@@ -47,7 +51,8 @@
         "github_url": "https://github.com/tuk05348/website-backend",
         "year": 2025,
         "short_desc": "RESTful Web Service",
-        "long_desc": "API written in Python and provisioned using Infrastructure-as-Code on AWS Cloud to update the number of visitors to this website on page load"
+        "long_desc": "API written in Python and provisioned using Infrastructure-as-Code on AWS Cloud to update the number of visitors to this website on page load",
+        "priority": false
     },
     {
         "title": "Guitar String",
@@ -57,7 +62,8 @@
         "github_url": "https://github.com/tuk05348/GuitarString",
         "year": 2024,
         "short_desc": "Virtual Instrument Keyboard",
-        "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them"
+        "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them",
+        "priority": false
     },
     {
         "title": "BlastPad",
@@ -67,7 +73,8 @@
         "github_url": "https://github.com/Capstone-Projects-2024-Spring/project-blastpad",
         "year": 2024,
         "short_desc": "Handheld Console",
-        "long_desc": "An educational console to teach students programming by letting them build, play, and share their own games"
+        "long_desc": "An educational console to teach students programming by letting them build, play, and share their own games",
+        "priority": false
     },
     {
         "title": "Phishing Email Detection",
@@ -77,7 +84,8 @@
         "github_url": "",
         "year": 2024,
         "short_desc": "Data Science Project",
-        "long_desc": "Machine learning model that uses the K-Nearest-Neighbors algorithm to detect phishing emails"
+        "long_desc": "Machine learning model that uses the K-Nearest-Neighbors algorithm to detect phishing emails",
+        "priority": false
     },
     {
         "title": "Orthography Overlord",
@@ -87,7 +95,8 @@
         "github_url": "https://github.com/cis3296f23/Orthography-Overlord",
         "year": 2024,
         "short_desc": "Desktop Spelling Game",
-        "long_desc": "A spelling game that challenges the user to spell a word based on audio sourced from the Merriam-Webster API"
+        "long_desc": "A spelling game that challenges the user to spell a word based on audio sourced from the Merriam-Webster API",
+        "priority": false
     },
     {
         "title": "Interactive Shell",
@@ -97,7 +106,8 @@
         "github_url": "",
         "year": 2023,
         "short_desc": "Linux C Shell",
-        "long_desc": "Shell written in C to let user run programs and redirect and pipe input/output"
+        "long_desc": "Shell written in C to let user run programs and redirect and pipe input/output",
+        "priority": false
     },
     {
         "title": "Matrix Multiplication",
@@ -107,6 +117,7 @@
         "github_url": "",
         "year": 2023,
         "short_desc": "Performance Comparison",
-        "long_desc": "Graphs comparing the efficiency of SIMD, OMP, and MPI using matrix multiplication tests written in C"
+        "long_desc": "Graphs comparing the efficiency of SIMD, OMP, and MPI using matrix multiplication tests written in C",
+        "priority": false
     }
 ]

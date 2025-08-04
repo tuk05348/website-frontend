@@ -7,4 +7,5 @@ export interface Project {
     year: number;
     short_desc: string;
     long_desc: string;
+    priority: boolean;
 }

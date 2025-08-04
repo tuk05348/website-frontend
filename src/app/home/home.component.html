@@ -1,10 +1,13 @@
 <div class="home-container">
-    <img class="photo" src="https://cdn.niazbaharudeen.com/photo.png" alt="Professional Photo">
+    <div class="photo-container">
+        <img class="photo" ngSrc="https://cdn.niazbaharudeen.com/photo.png"
+            width="762" height="762" alt="Professional Photo" priority>
+    </div>
     <div class="intro-container">
         <span class="name">Hello, I'm Niaz Baharudeen!</span>
         <span>{{ bio }}</span>
-        <a href="Baharudeen_Niaz_Resume.pdf" download>
-            <button id="download-link">Download Resume</button>
+        <a class="link" href="Baharudeen_Niaz_Resume.pdf" download>
+            <button type="button" id="download-link">Download Resume</button>
         </a>
     </div>
 </div>

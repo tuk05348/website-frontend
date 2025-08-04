@@ -19,10 +19,20 @@
     font-weight: bold;
 }
 
+.photo-container {
+    width: 70%;
+}
+
 .photo {
     border: #36454F 5px solid;
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    width: fit-content;
+    border-radius: 1em;
 }
 
 #download-link {
@@ -38,6 +48,7 @@
     border-radius: 1em;
     font-weight: bold;
     font-size: 1.17em;
+    font-family: inherit;
     cursor: pointer;
 }
 
@@ -55,16 +66,11 @@
 
 @media (min-width: 768px) {
     .home-container {
-        display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 3% 10%;
-        gap: 7%;
     }
 
-    .photo {
-        width: 30%;
+    .photo-container {
+        width: 30rem;
     }
 
     .intro-container {

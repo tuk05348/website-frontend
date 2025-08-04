@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { NgIf, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import emailjs, {type EmailJSResponseStatus } from '@emailjs/browser';
@@ -9,7 +9,7 @@ const myPublicKey: string = 'y8gA-9cIn9qNDtzid';
 
 @Component({
   selector: 'app-contact',
-  imports: [ReactiveFormsModule, NgIf],
+  imports: [ReactiveFormsModule, NgIf, NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BioService } from '../Services/bio.service';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
-  constructor(private bioService: BioService) {}
+  private bioService = inject(BioService);
 
   bio: string = ''; 
 
