@@ -19,7 +19,8 @@ export class ProjectCardComponent {
     github_url: '',
     year: 0,
     short_desc: '',
-    long_desc: ''
+    long_desc: '',
+    priority: false
   };
 
 }
