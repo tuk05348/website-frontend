@@ -1,7 +1,10 @@
 <div class="home-container">
     <div class="photo-container">
-        <img class="photo" ngSrc="https://cdn.niazbaharudeen.com/photo.png"
-            width="762" height="762" alt="Professional Photo" priority>
+        <picture>
+            <source srcset="https://cdn.niazbaharudeen.com/photo.avif" type="image/avif" />
+            <source srcset="https://cdn.niazbaharudeen.com/photo.webp" type="image/webp" />
+            <img class="photo" src="https://cdn.niazbaharudeen.com/photo.png" width="762" height="762" alt="Professional Photo" priority>
+        </picture>
     </div>
     <div class="intro-container">
         <span class="name">Hello, I'm Niaz Baharudeen!</span>
