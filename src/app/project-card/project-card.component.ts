@@ -20,7 +20,7 @@ export class ProjectCardComponent {
     year: 0,
     short_desc: '',
     long_desc: '',
-    priority: false
+    priority: ''
   };
 
 }

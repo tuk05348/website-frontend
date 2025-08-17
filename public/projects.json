@@ -8,7 +8,7 @@
         "year": 2025,
         "short_desc": "Personal Website",
         "long_desc": "Portfolio website built in Angular to show off my skills, experience, and projects",
-        "priority": true
+        "priority": "high"
     },
     {
         "title": "CookSys Platform",
@@ -19,7 +19,7 @@
         "year": 2025,
         "short_desc": "Project Management Dashboard",
         "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Quizify",
@@ -30,7 +30,7 @@
         "year": 2025,
         "short_desc": "Spotify Guessing Game",
         "long_desc": "Full stack application built using Angular and Spring to manage a company's teams and projects",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Twitter Clone API",
@@ -41,7 +41,7 @@
         "year": 2025,
         "short_desc": "RESTful Web Service",
         "long_desc": "API built in Spring to retrieve, create, update, and delete users, hashtags, mentions,and posts",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Visitor Count API",
@@ -52,7 +52,7 @@
         "year": 2025,
         "short_desc": "RESTful Web Service",
         "long_desc": "API written in Python and provisioned using Infrastructure-as-Code on AWS Cloud to update the number of visitors to this website on page load",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Guitar String",
@@ -63,7 +63,7 @@
         "year": 2024,
         "short_desc": "Virtual Instrument Keyboard",
         "long_desc": "Desktop Java application utilizing the Karplus-Strong algorithm to simulate a guitar, drums, harp, and a mix of them",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "BlastPad",
@@ -74,7 +74,7 @@
         "year": 2024,
         "short_desc": "Handheld Console",
         "long_desc": "An educational console to teach students programming by letting them build, play, and share their own games",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Phishing Email Detection",
@@ -85,7 +85,7 @@
         "year": 2024,
         "short_desc": "Data Science Project",
         "long_desc": "Machine learning model that uses the K-Nearest-Neighbors algorithm to detect phishing emails",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Orthography Overlord",
@@ -96,7 +96,7 @@
         "year": 2024,
         "short_desc": "Desktop Spelling Game",
         "long_desc": "A spelling game that challenges the user to spell a word based on audio sourced from the Merriam-Webster API",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Interactive Shell",
@@ -107,7 +107,7 @@
         "year": 2023,
         "short_desc": "Linux C Shell",
         "long_desc": "Shell written in C to let user run programs and redirect and pipe input/output",
-        "priority": false
+        "priority": "auto"
     },
     {
         "title": "Matrix Multiplication",
@@ -118,6 +118,6 @@
         "year": 2023,
         "short_desc": "Performance Comparison",
         "long_desc": "Graphs comparing the efficiency of SIMD, OMP, and MPI using matrix multiplication tests written in C",
-        "priority": false
+        "priority": "auto"
     }
 ]

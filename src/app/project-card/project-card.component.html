@@ -3,7 +3,7 @@
         <picture>
             <source srcset="{{ project.image_path }}.webp" type="image/webp" />
             <img class="project-image" src="{{ project.image_path }}.png" width="150" height="180" 
-            [alt]="project.alt_text" [title]="project.image_title">
+            [alt]="project.alt_text" [title]="project.image_title" [attr.fetchpriority]="project.priority">
         </picture>
         <div class="content">
             <span *ngIf="!project.github_url" class="title">{{ project.title }}</span>
